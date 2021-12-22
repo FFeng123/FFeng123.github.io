@@ -142,6 +142,7 @@ function appendItem(data,li){
     let emt = document.createElement("div");
     li.appendChild(emt);
 
+    emt.className = "md";
     emt.innerHTML = marked.parse(data.markdown);
     emt.setAttribute("index",data.index);
     emt.onclick = openArticle;// 点击事件

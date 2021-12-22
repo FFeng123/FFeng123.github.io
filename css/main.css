@@ -1,5 +1,6 @@
 @import url("/css/code/atom-one-light.css");
 @import url("https://imsun.github.io/gitment/style/default.css");
+@import url("/css/markdown.css");
 
 * {
     padding:  0;
