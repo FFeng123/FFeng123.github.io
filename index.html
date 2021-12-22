@@ -1,121 +1,119 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea</title>
-<link rel="shortcut icon" href="https://FFeng123.github.io/favicon.ico?v=1639716854420">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://FFeng123.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Gridea - Atom Feed" href="https://FFeng123.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+    <head>
+        <meta charset="utf-8">
+        <title>这里是峰峰的小窝</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+    </head>
+    <body>
+        <!--导航栏-->
+        <div class="navline">
+            <ui class='nav'>
+                <a href="#" onclick="setWebPage('P-home')" id="NP-home"><li><img src="/images/main.svg" class="icon"> 主页</li></a>
+                <!--前面的区域以后再来探索吧-->
+                <!--<a href="#" id="NP-photo"><li><img src="/images/photo.svg" class="icon"> 相册</li></a>！！！！！！！！！！！前面的区域以后再来探索吧！-->
+                <!--前面的区域以后再来探索吧-->
+                <a href="#" onclick="setWebPage('P-friend')" id="NP-friend"><li><img src="/images/connect.svg" class="icon"> 友链</li></a>
+            </ui>
+            <img id="loadingMS" src="/images/loading.gif" style="box-shadow: 0 0 0.2em #000;padding: 0.1em;background-color: #fff;transition-duration: 50ms;position: absolute;right: 1em;">
+        </div>
+        <!--展示图-->
+        <div class="topimage">
+            <div class="BGimage" id="topimage" style="font-size: 0;">/images/indexBG.jpg</div>
+        </div>
+        <!-- 主页 -->
+        <div id="P-home" style="display: none;">
+            <div class="topbox">
+                <p class="bigTitle">峰峰的小窝</p>
+            </div>
+            <!--主要内容-->
+            <div class="main">
+                <div class="block" style="width: 60%;text-align: center;" id="main">
+                    <h1><img src="/images/books.svg" class="icon"> 峰峰の物语</h1>
+                    <div class="abstorigtop">
+                        <a class="button" onclick="loadPage()"><img src="/images/reload.svg" class="icon"></a>
+                    </div>
+                    <!--文章列表-->
+                    <div id = "list" class="list"></div>
+                    <!--翻页按钮-->
+                    <div class="pageButtons" id="pages"></div>
+                </div>
+                <!--右侧副栏-->
+                <div class="aux" id="aux">
+                    <!--我的介绍-->
+                    <div class="block">
+                        <div class="line">
+                            <img class="headimage" id="me-head">
+                            <div class="row" style="padding: 0.5em;flex-grow: 1;">
+                                <p style="font-size: 1.2em" id="me-name"></p>
+                                <p id="me-namelast"></p>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div id="me-mess"></div>
+                        <span style="height: 1.8em;"></span>
+                        <div class="downbox">
+                            <a href="#" onclick="openArticle('0')">查看更多>></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 文章页 -->
+        <div id="P-article" style="display: none;">
+            <div class="topbox">
+                <p class="bigTitle" id="A-title">文章标题</p>
+                <p class="bigTitle" style="font-size: 1.5em" id="A-time">时间</p>
+                <div class="abstorigtop" style="top: 1em;right: 20%;" id="A-mark"></div>
+            </div>
+            <div class="main">
+                <div class="block" style="width: 60%;padding: 4em;box-sizing: border-box;" id="A-main">
+                    <div id="A-box"></div>
+                    <!--指向的文章列表-->
+                    <div id="Alistee">
+                        <h1 style="text-align: center;"><img src="/images/books.svg" class="icon"> 相关内容</h1>
+                        <div id = "A-list" class="list"></div>
+                    </div>
+                </div>
+                <!--右侧副栏-->
+                <div class="aux" style="height: 36em;" id="A-aux">
+                    <div class="block" style="max-height: 100%;overflow: visible;">
+                        <p style="font-size: 1.2em;text-align: center;">评论</p>
+                        <hr/>
+                        <div class="srolist" >
+                            <div>aaa</div>
+                            <div>aaa</div> 
+                        </div>
+                        <div id="Aediter">
 
+                        </div>
+                        <div id="A-says"></div>
 
-
-    <meta name="description" content="温故而知新" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://FFeng123.github.io">
-  <img class="avatar" src="https://FFeng123.github.io/images/avatar.png?v=1639716854420" alt="">
-  </a>
-  <h1 class="site-title">
-    Gridea
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://FFeng123.github.io/post/hello-gridea/">
-        <h2 class="post-title">Hello Gridea</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2018-12-12
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="https://FFeng123.github.io/tag/XORgx45lj/" class="post-tag">
-            # Gridea
-          </a>
-        
-      </div>
-      
-        <a href="https://FFeng123.github.io/post/hello-gridea/" class="post-feature-image" style="background-image: url('https://FFeng123.github.io/post-images/hello-gridea.png')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-
-      </div>
-    </article>
-  
-</div>
-
-    
-        <div class="pagination-container">
-  
-  
-</div>
-
-    
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://FFeng123.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
-      </div>
-    </div>
-  </body>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--友链页-->
+        <div id="P-friend" style="display: none;">
+            <div class="topbox">
+                <p class="bigTitle">友链</p>
+                <p class="bigTitle" style="font-size: 1.5em" id="F-amount"></p>
+                <div class="abstorigtop" style="top: 1em;right: 20%;" id="A-mark"></div>
+            </div>
+            <div class="main">
+                <div class="block" id="F-main">
+                    <h2 style="text-align: center;">正在准备</h2>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="/js/marked.min.js"></script>
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <!--<script type="text/javascript" src="/js/wangEditor.min.js"></script>-->
+        <script type="text/javascript" src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+        <script type="text/javascript" src="/js/interface.js"></script>
+        <script type="text/javascript">
+            loadPageData();
+        </script>
+    </body>
 </html>
