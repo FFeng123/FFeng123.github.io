@@ -49,7 +49,7 @@ function loadPageData(){
 
         // 显示页码
         let list = document.getElementById("pages");
-        while(list.childElementCount) list.removeChild(list.children[0]);
+        list.innerHTML = "";
         
         function create_ent(text,ret){
             let r = document.createElement("a");
@@ -62,7 +62,7 @@ function loadPageData(){
         }
 
         list.appendChild(create_ent("<",-1));
-        pageDatas.pageAmount = Math.round(pageDatas.articleAmount / pageDatas.pageLength);
+        pageDatas.pageAmount = Math.ceil(pageDatas.articleAmount / pageDatas.pageLength);
         for(let i = 1; i <= pageDatas.pageAmount; i++){
             list.appendChild(create_ent(String(i),i));
         }
@@ -341,14 +341,24 @@ function getFrineds(){
         };
         li.appendChild(e);
     }
+    function randomArr(array){
+        for (var i = 0; i < array.length; i++) {
+            var iRand = parseInt(array.length * Math.random());
+            var temp = array[i];
+            array[i] = array[iRand];
+            array[iRand] = temp;
+        }
+        return array;
+    }
     fetch(pageDatas.friendFile).then(re => re.json(), re => re).then(re => {
+        re = randomArr(re);
         friendsIsLoaded = re;
         document.getElementById("F-amount").innerHTML = "后宫佳丽" + String(re.length) + "千";
         document.getElementById("F-main").innerHTML = "";
+        
         for (let i = 0; i < re.length; i++) {
             createFriendBox(re[i],i);
         }
-        friendsIsLoaded = true;
     },re => getFrineds());
     
 }
