@@ -1,12 +1,11 @@
 {
-    "title": "关于我",
-    "time": "2021年12月",
-    "markdown": "/datas/mds/0.md",
-    "bg": "/images/404BG.jpg",
+    "title": "小窝建成",
+    "time": "2021年12月22日",
+    "markdown": "/datas/mds/小窝建成.md",
+    "bg": "/images/indexBG.jpg",
     "mark": {
-        "标签1":"#80f","标签2":"#88f","标签3":"#636"
+        "开发":"#2E2"
     },
     "connect":[
-        "0","1"
     ]
 }
