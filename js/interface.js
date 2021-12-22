@@ -200,17 +200,6 @@ function init(){
         'image',
     ]
     editor.create();*/
-    // 评论系统
-    var gitment = new Gitment({
-        id: '0',
-        owner: '2821869675@qq.com',
-        repo: 'test1',
-        oauth: {
-          client_id: '7e29ceda8c49868c79fe',
-          client_secret: 'd2eb8a99d7432ac970a82f07cdac9e9da22b7456',
-        },
-    })
-    gitment.render('A-says');
 }
 
 /**
@@ -312,6 +301,19 @@ function openArticle(inindex){
 
         let pageld = {li:document.getElementById("A-list"),Ali:loading.v.json.connect};
         document.getElementById("Alistee").style.display = pageld.Ali.length ? "" : "none";
+
+        // 评论系统
+        var gitment = new Gitment({
+            id: loading.v.inindex,
+            owner: '2821869675@qq.com',
+            repo: 'test1',
+            oauth: {
+                client_id: '7e29ceda8c49868c79fe',
+                client_secret: 'd2eb8a99d7432ac970a82f07cdac9e9da22b7456',
+            },
+        })
+        gitment.render('A-says');
+
         loading.v = null;
         loadPage(pageld);
 
