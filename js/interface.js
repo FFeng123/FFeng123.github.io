@@ -304,6 +304,7 @@ function openArticle(inindex){
         document.getElementById("Alistee").style.display = pageld.Ali.length ? "" : "none";
 
         // 评论系统
+        /*
         var gitment = new Gitment({
             id: loading.v.inindex,
             owner: 'FFeng123',
@@ -314,6 +315,18 @@ function openArticle(inindex){
             },
         })
         gitment.render('A-says');
+        */
+        var gitalk = new Gitalk({
+            clientID: '7e29ceda8c49868c79fe',
+            clientSecret: 'd2eb8a99d7432ac970a82f07cdac9e9da22b7456',
+            repo: 'FFeng123.github.io',
+            owner: 'FFeng123',
+            admin: ['FFeng123'],
+            id: "Article-" + String(loading.v.inindex),      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+          })
+          
+          gitalk.render('A-says');
 
         loading.v = null;
         loadPage(pageld);

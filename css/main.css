@@ -1,5 +1,5 @@
 @import url("/css/code/atom-one-light.css");
-@import url("https://imsun.github.io/gitment/style/default.css");
+@import url("https://unpkg.com/gitalk/dist/gitalk.css");
 @import url("/css/markdown.css");
 
 * {
