@@ -329,7 +329,7 @@ function openArticle(inindex){
             language: "zh-CN",
 
           })
-          
+          document.getElementById("A-says").innerHTML = "";
           gitalk.render('A-says');
 
         loading.v = null;
