@@ -35,7 +35,7 @@
                         <a class="button" onclick="loadPage()"><img src="/images/reload.svg" class="icon"></a>
                     </div>
                     <!--文章列表-->
-                    <div id = "list" class="list"></div>
+                    <div id = "list" class="list"><h2 style="text-align: center;">正在准备</h2></div>
                     <!--翻页按钮-->
                     <div class="pageButtons" id="pages"></div>
                 </div>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <!--右侧副栏-->
-                <div class="aux" style="height: 36em;" id="A-aux">
+                <div class="aux" style="height: auto;width: 35%;" id="A-aux">
                     <div class="block" style="max-height: 100%;overflow: visible;padding: 0.5em;">
                         <!--<p style="font-size: 1.2em;text-align: center;">评论</p>
                         <hr/>
@@ -113,5 +113,9 @@
         <script type="text/javascript">
             loadPageData();
         </script>
+        <script src="/js/sakura.js"></script>
+        <canvas ></canvas>
+        <canvas style="position: fixed;left: 0;top: 0;right:0;bottom: 0; pointer-events: none;z-index:-5;" id="background"></canvas>
+        <script src="/js/background.js"></script>
     </body>
 </html>

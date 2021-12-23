@@ -150,12 +150,12 @@ img:not(.icon) {
 
     border-radius: 0.5em;
     background-color: #fff;
-    box-shadow: 0 0 1em #000;
+    box-shadow: 0 0 0.5em #000;
 
     /*min-width: 4em;
     /*min-height: 4em;*/
     padding: 0.5em;
-    margin: 1em;
+    margin: 0.5em;
     position: relative;
 }
 
@@ -237,7 +237,7 @@ img:not(.icon) {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 6em;
+    height: 5em;
     padding: 0.3em; 
     text-align: center;
 

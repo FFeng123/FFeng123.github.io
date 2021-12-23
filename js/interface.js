@@ -143,29 +143,14 @@ function appendItem(data,li){
     li.appendChild(emt);
 
     emt.className = "md";
-    emt.innerHTML = marked.parse(data.markdown);
+    emt.innerHTML = marked.parse(data.markdown) + '<a class="more">查看更多&gt;&gt;</a>';
     emt.setAttribute("index",data.index);
     emt.onclick = openArticle;// 点击事件
 
-    let ee = document.createElement("a");
-    ee.className = "more";
-    ee.appendChild(document.createTextNode("查看更多>>"));
-    //ee.href = "#";
-    emt.appendChild(ee);
-
     function createTitle(data){
         let re = document.createElement("div");
+        re.innerHTML = '<h1 style="text-align: center;margin: 0">{0}</h1><p style="text-align: right;">{1}</p>'.replace("{0}",data.title).replace("{1}",data.time);
         let ee;
-
-        ee = document.createElement("h1");
-        ee.appendChild(document.createTextNode(data.title));
-        ee.style.textAlign = "center";
-        re.appendChild(ee);
-
-        ee = document.createElement("p");
-        ee.style.textAlign = "right";
-        ee.appendChild(document.createTextNode(data.time))
-        re.appendChild(ee);
 
         ee = createMarks(data.mark);
         ee.className = "abstorigtop";
@@ -173,12 +158,9 @@ function appendItem(data,li){
         ee.style.marginRight = "0.5em";
         re.appendChild(ee);
 
-        re.appendChild(document.createElement("hr"));
         return re;
     }
     emt.insertBefore(createTitle(data),emt.children[0]);
-
-    
 
 }
 
