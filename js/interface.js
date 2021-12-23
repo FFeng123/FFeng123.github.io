@@ -322,8 +322,12 @@ function openArticle(inindex){
             repo: 'FFeng123.github.io',
             owner: 'FFeng123',
             admin: ['FFeng123'],
-            id: "Article-" + String(loading.v.inindex),      // Ensure uniqueness and length less than 50
-            distractionFreeMode: false  // Facebook-like distraction free mode
+            id: "Article-" + String(loading.v.inindex),
+            distractionFreeMode: false,
+            title: loading.v.json.title,
+            body: "关于" + loading.v.json.title + "的评论",
+            language: "zh-CN",
+
           })
           
           gitalk.render('A-says');
