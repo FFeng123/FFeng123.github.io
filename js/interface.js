@@ -306,8 +306,8 @@ function openArticle(inindex){
         // 评论系统
         var gitment = new Gitment({
             id: loading.v.inindex,
-            owner: '2821869675@qq.com',
-            repo: 'test1',
+            owner: 'FFeng123',
+            repo: 'FFeng123.github.io',
             oauth: {
                 client_id: '7e29ceda8c49868c79fe',
                 client_secret: 'd2eb8a99d7432ac970a82f07cdac9e9da22b7456',
