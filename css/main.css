@@ -226,11 +226,11 @@ img:not(.icon) {
     transform: scale(0.995);
     transition-duration: 100ms;
 }
-
+/*
 .list code{
     margin: 0.4em 0 0.4em 0;
     box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.534);
-}
+}*/
 .list>div>.more {/* 显示更多内容 */
     background: linear-gradient(rgba(255, 255, 255, 0),rgb(255, 255, 255));
     position:absolute;

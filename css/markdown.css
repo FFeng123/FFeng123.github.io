@@ -5,7 +5,7 @@
 }
 
 .md h1, .md h2,.md h3, .md h4, .md h5 {
-	font-family: Georgia, Palatino, serif;
+	/*font-family: Georgia, Palatino, serif;*/
 }
 .md h1, .md h2, .md h3, .md h4, .md h5, .md p , .md dl{
     margin-bottom: 16px;
@@ -73,7 +73,7 @@
 }
 
 .md code {
-    font-family: Consolas, Monaco, Andale Mono, monospace;
+    /*font-family: Consolas, Monaco, Andale Mono, monospace;*/
     margin: 0 2px;
 }
 
@@ -204,7 +204,7 @@
 .md input,
 .md select,
 .md textarea {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-size: 13px;
     font-weight: normal;
     line-height: normal;
@@ -266,7 +266,7 @@
 .md button {
     display: inline-block;
     padding: 4px 14px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-size: 13px;
     line-height: 18px;
     -webkit-border-radius: 4px;
