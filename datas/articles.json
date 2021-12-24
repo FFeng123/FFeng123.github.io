@@ -1,0 +1,12 @@
+{
+    "articleAmount": 2,
+    "pointerFile": "/datas/articles/{index}.json",
+    "pageLength": 10,
+    "pagenN": 1,
+    "friendFile": "/datas/friends.json",
+    
+    "meName": "峰峰",
+    "meHead": "https://avatars.githubusercontent.com/u/96224526",
+    "meNameLast":"なりたいひとになる",
+    "memess":""
+}
