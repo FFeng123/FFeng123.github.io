@@ -10,6 +10,7 @@ loading = {
     }
 };// 正在加载的数据
 pageDatas = {};// 文章数据
+var preload = "";// 用于url跳转
 
 //editer = null;// 编辑器
 
@@ -39,7 +40,7 @@ function resized(){
  */
 function loadPageData(){
     loading.v = true;
-    fetch("/articles.json",{"cache": 'no-cache'}).then(re => re.json(),re => re).then(re => {
+    fetch("/datas/articles.json",{"cache": 'no-cache'}).then(re => re.json(),re => re).then(re => {
         pageDatas = re;
         // 加载我的信息
         document.getElementById("me-head").src = pageDatas.meHead;
@@ -68,9 +69,12 @@ function loadPageData(){
         }
         list.appendChild(create_ent(">",-2));
         pageShow();
-        // 加载列表
-        loadPage({li: document.getElementById("list")});
         
+        if(preload != ""){
+            openArticle(preload);
+        }else{
+            loadPage({li: document.getElementById("list")});
+        }
     },re => loadPageData());
     loading.v = null;
 }
@@ -99,6 +103,10 @@ function loadPage(arg){
                 hljs.initHighlightingOnLoad();
             }if(loading.v.now >= loading.v.ed){
                 loading.v = null;
+                if(preload != ""){// 尚未加载主列表
+                    preload = "";
+                    loadPage({li: document.getElementById("list")});
+                }
                 return;// 结束条件
             }
             // 请求数据
@@ -171,6 +179,8 @@ function init(){
 
     document.body.onresize = resized;
     resized();
+    
+    preload = location.href.substring(location.href.indexOf("?") == -1 ? location.href.length + 1 : location.href.indexOf("?") + 1,location.href.indexOf("#") == -1 ? location.href.length : location.href.indexOf("#"));
     setWebPage("P-home");
     /*
     const E = window.wangEditor;
@@ -244,11 +254,13 @@ function setWebPage(page){
 
     switch (page) {
         case "P-home":// 主页
+            window.history.pushState({},0,"?");
             setTopImage(document.getElementById("topimage").childNodes[0].data);
             break;
         case "P-article":// 文章页
             break;
         case "P-friend":// 友链
+            window.history.pushState({},0,"?");
             setTopImage("/images/friend.jpg");
             getFrineds();
             break;
@@ -304,15 +316,17 @@ function openArticle(inindex){
             repo: 'FFeng123.github.io',
             owner: 'FFeng123',
             admin: ['FFeng123'],
-            id: "Article-" + String(loading.v.inindex),
+            id: "Article-" + String(loading.v.json.id),
             distractionFreeMode: false,
             title: loading.v.json.title,
             body: "关于" + loading.v.json.title + "的评论",
             language: "zh-CN",
 
-          })
-          document.getElementById("A-says").innerHTML = "";
-          gitalk.render('A-says');
+        })
+        document.getElementById("A-says").innerHTML = "";
+        gitalk.render('A-says');
+        // URL
+        window.history.pushState({},0,"?" + loading.v.inindex);
 
         loading.v = null;
         loadPage(pageld);

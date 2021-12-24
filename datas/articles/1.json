@@ -1,0 +1,12 @@
+{
+    "id": "0",
+    "title": "小窝建成",
+    "time": "2021年12月22日",
+    "markdown": "/datas/mds/小窝建成.md",
+    "bg": "/images/indexBG.jpg",
+    "mark": {
+        "开发":"#2E2"
+    },
+    "connect":[
+    ]
+}

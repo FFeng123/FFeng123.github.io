@@ -1,0 +1,12 @@
+{
+    "id": "0",
+    "title": "关于我",
+    "time": "2021年12月22日",
+    "markdown": "/datas/mds/关于我.md",
+    "bg": "/images/404BG.jpg",
+    "mark": {
+        "介绍":"#2E2"
+    },
+    "connect":[
+    ]
+}
