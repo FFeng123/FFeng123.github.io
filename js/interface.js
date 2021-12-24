@@ -316,7 +316,7 @@ function openArticle(inindex){
             repo: 'FFeng123.github.io',
             owner: 'FFeng123',
             admin: ['FFeng123'],
-            id: "Article-" + String(loading.v.inindex),
+            id: "Article-" + String(loading.v.json.id),
             distractionFreeMode: false,
             title: loading.v.json.title,
             body: "关于" + loading.v.json.title + "的评论",
