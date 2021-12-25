@@ -186,7 +186,7 @@ function init(){
     
     var h = 0;
     document.body.onresize = function(){
-        resize();
+        resize ? resize() : 0;
     };
 }
 
