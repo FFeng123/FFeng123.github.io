@@ -183,17 +183,11 @@ function init(){
     
     preload = location.href.substring(location.href.indexOf("?") == -1 ? location.href.length + 1 : location.href.indexOf("?") + 1,location.href.indexOf("#") == -1 ? location.href.length : location.href.indexOf("#"));
     setWebPage("P-home");
-    /*
-    const E = window.wangEditor;
-    editor = new E("#Aediter");
-
-    editor.config.showFullScreen = true;
-    editor.config.menus = [
-        'foreColor',
-        'link',
-        'image',
-    ]
-    editor.create();*/
+    
+    var h = 0;
+    document.body.onresize = function(){
+        resize();
+    };
 }
 
 /**

@@ -98,17 +98,17 @@ if (! (navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {
         }
         return ret;
     }
-    
+    function resize () {
+        SHeight = window.innerHeight + addb * 2;
+        SWidth = window.innerWidth + addb * 2;
+        skrcanvas.height = SHeight;
+        skrcanvas.width = SWidth;
+    };
     function startSakura() {
         requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame;
         skrcanvas = document.createElement('canvas');
         staticx = true;
-        window.onresize = function () {
-            SHeight = window.innerHeight + addb * 2;
-            SWidth = window.innerWidth + addb * 2;
-            skrcanvas.height = SHeight;
-            skrcanvas.width = SWidth;
-        };window.onresize();
+        resize();
         skrcanvas.setAttribute('style', 'position: fixed;left: {0}px;top: {1}px;pointer-events: none;z-index:10;'.replace("{0}",-addb).replace("{1}",-addb));
         skrcanvas.setAttribute('id', 'canvas_sakura');
         document.getElementsByTagName('body')[0].appendChild(skrcanvas);

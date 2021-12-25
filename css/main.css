@@ -11,12 +11,36 @@
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
 }
+body{ 
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
 .main {/* 网页的主要内容区 */
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items:flex-start;
+}
 
+.bottomBar{
+    height: 3.5em;
+    margin-top: 3em;
+    padding: 1em;
+    background: rgb(59, 59, 59);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.658);
+    text-shadow: 0 0 0.1em #000;
+    font-size: 0.8em;
+    line-height: 1.6em;
 }
 
 
@@ -110,9 +134,7 @@ img:not(.icon) {
 .topbox{ /*页面顶部显示标题等 的容器*/
     width: 100%;
     height: 13em;
-
     margin-top: 3em;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
