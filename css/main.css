@@ -54,8 +54,6 @@ main{
     width: 100%;
     height: auto;
     font-size: 2.0em;
-    padding-left: 1em;
-    padding-right: 1em;
     user-select: none;
     overflow: visible;
     position: absolute;
@@ -104,7 +102,7 @@ img:not(.icon) {
     background: none;
     text-shadow: 0 0 0.1em rgb(255, 255, 255);
     border-bottom: 0.1em hidden rgb(83, 31, 179);
-    
+    cursor: pointer;
     white-space: nowrap;
 }
 
@@ -311,6 +309,7 @@ img:not(.icon) {
     display: flex;
     justify-content: center;
     margin: 0.2em;
+    cursor: pointer;
 }
 
 .pageButtons a:hover,.button:hover {
