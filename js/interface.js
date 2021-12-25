@@ -46,6 +46,7 @@ function loadPageData(){
     loading.v = true;
     fetch("/datas/articles.json",{"cache": 'no-cache'}).then(re => re.json(),re => re).then(re => {
         pageDatas = re;
+        setWebPage("P-home");
         // 加载我的信息
         document.getElementById("me-head").src = pageDatas.meHead;
         document.getElementById("me-name").innerHTML = pageDatas.meName;
@@ -182,7 +183,6 @@ function init(){
     if(text) setTopImage(text.data);
     
     preload = location.href.substring(location.href.indexOf("?") == -1 ? location.href.length + 1 : location.href.indexOf("?") + 1,location.href.indexOf("#") == -1 ? location.href.length : location.href.indexOf("#"));
-    setWebPage("P-home");
     
     var h = 0;
     document.body.onresize = function(){
@@ -250,18 +250,19 @@ function setWebPage(page){
     switch (page) {
         case "P-home":// 主页
             window.history.pushState({},0,"?");
-            setTopImage(document.getElementById("topimage").childNodes[0].data);
+            setTopImage(pageDatas.imgHome);
             break;
         case "P-article":// 文章页
             break;
         case "P-friend":// 友链
             window.history.pushState({},0,"?");
-            setTopImage("/images/friend.jpg");
+            setTopImage(pageDatas.imgFriend);
             getFrineds();
             break;
     }
     webNav = document.getElementById("N" + page);
     if(webNav)  webNav.className = "Select";
+    document.body.scrollIntoView();
 }
 
 
