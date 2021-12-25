@@ -57,7 +57,7 @@ main{
     padding-left: 1em;
     padding-right: 1em;
     user-select: none;
-    overflow: hidden;
+    overflow: visible;
     position: absolute;
     top: 0;
 
