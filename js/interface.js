@@ -23,18 +23,6 @@ function setTopImage(url){
     document.getElementById("topimage").style.backgroundImage = "url(" + url + ")";
 }
 
-
-/**
- * 当屏幕尺寸发生改变，用于显示和隐藏元素
- */
-function resized(){
-    let auxemt = document.getElementById("aux");
-    if(auxemt){
-        document.getElementById("A-aux").style.display = auxemt.style.display = document.body.clientWidth > 780 ? "block" : "none";
-        
-        document.getElementById("A-main").style.width = document.getElementById("main").style.width = document.body.clientWidth > 780 ? "60%" : "100%";
-    }
-}
 /**
  * 加载页面基本数据
  */
@@ -176,9 +164,6 @@ function init(){
     // 界面初始化
     let text = document.getElementById("topimage").childNodes[0];
     if(text) setTopImage(text.data);
-
-    document.body.onresize = resized;
-    resized();
     
     preload = location.href.substring(location.href.indexOf("?") == -1 ? location.href.length + 1 : location.href.indexOf("?") + 1,location.href.indexOf("#") == -1 ? location.href.length : location.href.indexOf("#"));
     setWebPage("P-home");
