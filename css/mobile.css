@@ -1,35 +1,10 @@
 .main {/* 网页的主要内容区 */
-    display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: center;
-    align-items:flex-start;
-
 }
 .main>.block{
     width: 100%;
     margin: 0;
     box-sizing: border-box;
-}
-.navline {/*导航栏的容器*/
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    font-size: 2.0em;
-    padding-left: 1em;
-    padding-right: 1em;
-    user-select: none;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-
-    background: linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0));
-    
 }
 
 .aux {/* 侧栏 */
