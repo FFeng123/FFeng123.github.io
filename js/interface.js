@@ -298,18 +298,6 @@ function openArticle(inindex){
         document.getElementById("Alistee").style.display = pageld.Ali.length ? "" : "none";
 
         // 评论系统
-        /*
-        var gitment = new Gitment({
-            id: loading.v.inindex,
-            owner: 'FFeng123',
-            repo: 'FFeng123.github.io',
-            oauth: {
-                client_id: '7e29ceda8c49868c79fe',
-                client_secret: 'd2eb8a99d7432ac970a82f07cdac9e9da22b7456',
-            },
-        })
-        gitment.render('A-says');
-        */
         var gitalk = new Gitalk({
             clientID: '7e29ceda8c49868c79fe',
             clientSecret: 'd2eb8a99d7432ac970a82f07cdac9e9da22b7456',
@@ -319,7 +307,7 @@ function openArticle(inindex){
             id: "Article-" + String(loading.v.json.id),
             distractionFreeMode: false,
             title: loading.v.json.title,
-            body: "关于" + loading.v.json.title + "的评论",
+            body: "关于 \"" + loading.v.json.title + "\" 的评论",
             language: "zh-CN",
 
         })
