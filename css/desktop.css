@@ -45,3 +45,11 @@
     box-sizing: border-box;
     flex-wrap: wrap;
 }
+
+#A-main{
+    padding: 4em;
+}
+#A-saysBox{
+    padding: 0.5em;
+    overflow: visible;
+}

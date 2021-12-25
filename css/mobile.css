@@ -38,7 +38,7 @@
 .aux>.block{
     width: 100%;
     margin: 0;
-    margin-top: 0.5em;
+    margin-top: 0em;
     
     box-sizing: border-box;
 }
@@ -53,4 +53,14 @@
     box-sizing: border-box;
     flex-wrap: wrap;
     margin: 0;
+}
+#A-main{
+    padding: 2em;
+    border-radius: 1em 1em 0 0;
+}
+#A-saysBox{
+    padding: 1em;
+    overflow: visible;
+    border-radius: 0 0 1em 1em;
+    box-shadow: none;
 }
