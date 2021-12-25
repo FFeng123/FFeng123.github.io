@@ -1,3 +1,19 @@
+/**
+ * 获取字符串前面line行
+ * @param {String} str 要操作的字符串
+ * @param {Number} line 行数
+ * @returns {String} 
+ */
+function getFirstLine(str, line){
+    let index = -1;
+    do {
+        index = str.indexOf("\n", index + 1);
+        line --;
+    } while (index != -1 && line > 0);
+    return str.substring(0,index == -1 ? str.length : index);
+}
+
+
 loading = {
     va:null,
     
@@ -86,7 +102,7 @@ function loadPage(arg){
                 loading.v.now += 1;
                 
                 data = loading.v.json;
-                data["markdown"] = markdown;
+                data["markdown"] = getFirstLine(markdown,8);// 只取前几行
                 appendItem(data,loading.v.toli);
                 hljs.initHighlightingOnLoad();
             }if(loading.v.now >= loading.v.ed){
@@ -339,7 +355,7 @@ function getFrineds(){
     fetch(pageDatas.friendFile).then(re => re.json(), re => re).then(re => {
         re = randomArr(re);
         friendsIsLoaded = re;
-        document.getElementById("F-amount").innerHTML = "后宫佳丽" + String(re.length) + "千";
+        document.getElementById("F-amount").innerHTML = "后宫佳丽" + String(re.length) + "";
         document.getElementById("F-main").innerHTML = "";
         
         for (let i = 0; i < re.length; i++) {
