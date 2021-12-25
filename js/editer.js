@@ -27,4 +27,5 @@ function setWebPage(page){
 
 function init(){
 
+
 }
