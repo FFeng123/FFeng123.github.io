@@ -1,11 +1,11 @@
 {
     "id": "1",
-    "title": "\"物尽其用\"",
-    "time": "2021年12月24日",
-    "markdown": "/datas/mds/\"物尽其用\".md",
-    "bg": "https://www.fnkc.net/public/2021/12/26/894c8a18765f0.jpg",
+    "title": "2021年总结",
+    "time": "2021年12月25日",
+    "markdown": "/datas/mds/2021 年总结.md",
+    "bg": "https://www.fnkc.net/public/2021/12/26/fdd0595398136.jpg",
     "mark": {
-        "实践":"#1c2938"
+        "总结":"#12aa9c"
     },
     "connect":[
     ]
