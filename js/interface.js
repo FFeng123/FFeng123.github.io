@@ -23,6 +23,10 @@ loading = {
     set v(a){
         this.va = a;
         document.getElementById("loadingMS").style.opacity = a ? 1 : 0;
+        /*if(!a && poperrs){
+            openArticle(poperrs);
+            poperrs = null;
+        }*/
     }
 };// 正在加载的数据
 pageDatas = {};// 文章数据
@@ -69,10 +73,24 @@ function setIDUrl(id){
     }
     se = location.href.substring(0,st) + (id == null ? "" : (wh ? "?" : "") + "id=" + String(id)) + (se == null ? "&" : "") + location.href.substring(ed);
     if(se != location.href)
-        history.pushState(0,"",se);
+        history.replaceState(id,"",se);
 }
-
-
+/*
+var poperrs = null;
+onpopstate = function(ev){
+    switch (ev.state) {
+        case -1:
+            setWebPage("P-home");
+            break;
+        case -2:
+            setWebPage("P-friend");
+            break;
+        default:
+            if(!openArticle(ev.state));
+                poperrs = ev.state;
+            break;
+    }
+}*/
 /**
  * 设置顶部图片
  */
@@ -265,7 +283,6 @@ function setPageN(){
             break;
     }
     
-    console.log(pge);
     pge = Math.max(1,Math.min(pageDatas.pageAmount,pge));
     if(pge != pageDatas.pagenN){
         let lst = pageDatas.pagenN;
@@ -274,7 +291,6 @@ function setPageN(){
         else pageShow();
         
     }
-    console.log(pge);
 }
 
 webState = null;// 当前的大页面
@@ -316,7 +332,7 @@ function setWebPage(page){
  * 由内容按钮元素调用或传入index
  */
 function openArticle(inindex){
-    if(loading.v) return;
+    if(loading.v) return false;
     let index = typeof inindex == "string" ? inindex : this.getAttribute("index");
     loading.v = {"inindex":index};
     
@@ -359,6 +375,7 @@ function openArticle(inindex){
         loadPage(pageld);
 
     }, re => {let iin = loading.v.inindex;loading.v = null;openArticle(iin);})
+    return true;
 }
 
 friendsIsLoaded = null;
@@ -406,4 +423,4 @@ function getFrineds(){
 init();
 onload = loadPageData();
 
-console.log = function(){}
+//console.log = function(){}
