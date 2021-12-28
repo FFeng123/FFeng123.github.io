@@ -155,13 +155,12 @@ img:not(.icon) {
 .BGimage { /*用于作背景的图片*/
     width: 100%;
     height: 100%;
-
     position: absolute;
     top: 0em;
-
-    /*background-image: url("/images/indexBG.jpg");*/
     background-size: cover;
     background-position: center;
+    
+    transition-duration: 600ms;
 }
 
 .block { /*用于显示内容的框框*/

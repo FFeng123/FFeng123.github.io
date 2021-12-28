@@ -94,8 +94,17 @@ onpopstate = function(ev){
 /**
  * 设置顶部图片
  */
+nowBGImg = null;
 function setTopImage(url){
-    document.getElementById("topimage").style.backgroundImage = "url(" + url + ")";
+    // document.getElementById("topimage").style.backgroundImage = "url(" + url + ")";
+    nowBGImg = new Image();
+    nowBGImg.onload = function(){
+        console.log(this.src);
+        if(nowBGImg == this)
+            document.getElementById("topimage").style.backgroundImage = "url(" + this.src + ")";
+    }
+    nowBGImg.src = url;
+
 }
 
 /**
