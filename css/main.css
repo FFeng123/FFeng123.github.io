@@ -152,16 +152,25 @@ img:not(.icon) {
 }
 
 
+@keyframes BGanim {
+    0% {background-position: 50% 0%;}
+    50% {background-position: 50% 100%;}
+    100% {background-position: 50% 0%;}
+}
+
 .BGimage { /*用于作背景的图片*/
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0em;
     background-size: cover;
-    background-position: center;
-    
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    animation: BGanim 70s infinite cubic-bezier(0.15, 0, 0.85, 1);
+    transition-property: background-image;
     transition-duration: 600ms;
 }
+
 
 .block { /*用于显示内容的框框*/
     display: flex;
