@@ -385,7 +385,11 @@ function openArticle(inindex){
         loading.v = null;
         loadPage(pageld);
 
-    }, re => {let iin = loading.v.inindex;loading.v = null;openArticle(iin);})
+    }, re => {
+        let iin = loading.v.inindex;
+        loading.v = null;
+        openArticle(iin);
+    });
     return true;
 }
 
