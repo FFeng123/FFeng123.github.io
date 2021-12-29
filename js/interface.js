@@ -95,15 +95,17 @@ onpopstate = function(ev){
  * 设置顶部图片
  */
 nowBGImg = null;
+nowBGIurl = "";
 function setTopImage(url){
     // document.getElementById("topimage").style.backgroundImage = "url(" + url + ")";
     nowBGImg = new Image();
     nowBGImg.onload = function(){
-        console.log(this.src);
-        if(nowBGImg == this)
+        if(nowBGIurl == this.src){
             document.getElementById("topimage").style.backgroundImage = "url(" + this.src + ")";
+            nowBGIurl = "";       
+        }
     }
-    nowBGImg.src = url;
+    nowBGIurl = nowBGImg.src = url;
 
 }
 
@@ -432,4 +434,4 @@ function getFrineds(){
 init();
 onload = loadPageData();
 
-//console.log = function(){}
+alert = console.error = console.log = function(){}// 禁止输出
