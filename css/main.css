@@ -153,9 +153,9 @@ img:not(.icon) {
 
 
 @keyframes BGanim {
-    0% {background-position: 50% 0%;}
-    50% {background-position: 50% 100%;}
-    100% {background-position: 50% 0%;}
+    0% {background-position: 0% 0%;}
+    50% {background-position: 100% 100%;}
+    100% {background-position: 0% 0%;}
 }
 
 .BGimage { /*用于作背景的图片*/
