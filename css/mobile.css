@@ -39,3 +39,25 @@
     border-radius: 0 0 1em 1em;
     box-shadow: none;
 }
+
+
+
+.bigTitle {
+    font-size: 12vw;
+    /*
+    color: #fff;
+    text-shadow: 0 0 0.2em #000;
+    flex-wrap: nowrap;
+    word-break: keep-all;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;*/
+    color: #fff;
+    text-shadow: 0 0 0.2em #000;
+    text-align: center;
+    word-break: keep-all;
+}
+.bigTitle-2{
+    font-size: 3vw;
+}

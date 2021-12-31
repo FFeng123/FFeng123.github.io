@@ -138,6 +138,7 @@ img:not(.icon) {
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .topimage { /*页面顶部背景图片的容器*/
@@ -339,13 +340,6 @@ img:not(.icon) {
     padding: 0.1em 0.3em 0.1em 0.3em;
     background: #88f;
     color: #fff;
-}
-.bigTitle {
-    font-size: 5em;
-    color: #fff;
-    text-shadow: 0 0 0.2em #000;
-    text-align: center;
-    /*user-select: none;*/
 }
 
 
