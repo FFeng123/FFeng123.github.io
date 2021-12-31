@@ -1,7 +1,7 @@
 {
-    "articleAmount": 4,
+    "articleAmount": 5,
     "pointerFile": "/datas/articles/{index}.json",
-    "pageLength": 5,
+    "pageLength": 4,
     "pagenN": 1,
     "friendFile": "/datas/friends.json",
     
