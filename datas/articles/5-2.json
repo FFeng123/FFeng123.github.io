@@ -1,13 +1,11 @@
 {
-    "id": "5",
+    "id": "5-2",
     "title": "关于疫情被封校这档事",
-    "time": "2022年3月31日起",
-    "markdown": "/datas/mds/关于疫情被封校这档事.md",
+    "time": "2022年4月3日",
+    "markdown": "/datas/mds/关于疫情被封校这档事2.md",
     "bg": "https://s3.bmp.ovh/imgs/2022/04/03/0338d38b9b3333d6.jpg",
     "mark": {
-        "日常":"#737"
     },
     "connect":[
-        "5-1"
     ]
 }
