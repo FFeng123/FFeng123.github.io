@@ -118,7 +118,8 @@ function loadPageData(){
         pageDatas = re;
         setWebPage("P-home");
         // 加载我的信息
-        document.getElementById("linkIcon").href = document.getElementById("me-head").src = pageDatas.meHead;
+        //document.getElementById("linkIcon").href = 
+        document.getElementById("me-head").src = pageDatas.meHead;
         document.getElementById("me-name").innerHTML = pageDatas.meName;
         document.getElementById("me-namelast").innerHTML = pageDatas.meNameLast;
         document.getElementById("me-mess").innerHTML = pageDatas.memess;
