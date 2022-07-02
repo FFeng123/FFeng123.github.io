@@ -35,7 +35,11 @@ e和n是公钥。
 
 
 ## 如何计算
-p和q的取随机我是这样弄的
+首先是p和q的计算，这个算法能够正确需要p和q必须是质数。如何生成质数...
+
+首先要生成一个随机数，然后进行质数判断，如果不是，就再随机。
+
+生成一个随机大数我这样来做。
 ```c++
 BigInteger RSA::BigIntRand(const unsigned int& n) const{
 	srand(time(NULL));// 值随机数种子
@@ -49,6 +53,27 @@ BigInteger RSA::BigIntRand(const unsigned int& n) const{
 }
 ```
 
+然后是质数判断。有一个基于费马小定律的算法叫 [米勒-拉宾素性检验](https://zh.wikipedia.org/wiki/%E7%B1%B3%E5%8B%92-%E6%8B%89%E5%AE%BE%E6%A3%80%E9%AA%8C) ，这样：
+```c++
+bool RSA::isPrime(BigInteger p)const{
+	BigInteger s = p - 1;
+	while (s % 2 == 0) {
+	   s /= 2;
+	}
+	for (int i = 0; i < PrimeTestCount; i++) {
+	   BigInteger a = BigInteger(rand()) % (p - 1) + 1, temp = s;
+	   BigInteger mod = BigModularPow(a, temp, p);
+	   while (temp != p - 1 && mod != 1 && mod != p - 1) {
+		  mod = BigModularPow(mod, mod, p);
+		  temp *= 2;
+	   }
+	   if (mod != p - 1 && temp % 2 == 0) {
+		  return false;
+	   }
+	}
+	return true;
+}
+```
 
 有了高精度，上面的都不是问题，生成问题都在d和e这里，别说写程序，给我道这样的数学算数题我都算不出来。
 
