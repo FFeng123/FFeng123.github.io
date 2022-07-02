@@ -143,14 +143,14 @@ BigInteger RSA::BigModularPow(BigInteger base_, BigInteger exp_, BigInteger mod)
 	}
 	BigInteger r = 1;
 	// 这地方把base和exp又定义了一遍，考虑到传递来的BigInteger的数据可能是引用传递
-	BigInteger base = base_ % mod;
+	BigInteger base = base_;
 	BigInteger exp = exp_;
 	while(exp > 0){
 		if(exp % 2 == 1){
 			r = (r * base) % mod;
 		}
 		exp /= 2;
-		base = (base * 2) % mod;
+		base = (base * base) % mod;
 	}
 	return r;
 }
