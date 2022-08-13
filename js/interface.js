@@ -223,13 +223,17 @@ function createMarks(marks){
  * 在列表中加入一个项目
  */
 function appendItem(data,li){
+    let itm = document.createElement("div");
+    itm.innerHTML = `<div class='itemimage' style='background-image: url(\"${data.bg}\");'></div>`
     let emt = document.createElement("div");
-    li.appendChild(emt);
+    // emt.className = "itemtext"
+    li.appendChild(itm);
+    itm.append(emt);
 
-    emt.className = "md";
+    emt.className += "itemtext md";
     emt.innerHTML = marked.parse(data.markdown) + '<a class="more">查看更多&gt;&gt;</a>';
-    emt.setAttribute("index",data.index);
-    emt.onclick = openArticle;// 点击事件
+    itm.setAttribute("index",data.index);
+    itm.onclick = openArticle;// 点击事件
 
     function createTitle(data){
         let re = document.createElement("div");
