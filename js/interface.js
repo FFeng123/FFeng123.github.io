@@ -97,16 +97,14 @@ onpopstate = function(ev){
 nowBGImg = null;
 nowBGIurl = "";
 function setTopImage(url){
-    // document.getElementById("topimage").style.backgroundImage = "url(" + url + ")";
     nowBGImg = new Image();
     nowBGImg.onload = function(){
         if(nowBGIurl == this.src){
-            document.getElementById("topimage").style.backgroundImage = `url("${this.src}")`;
+            document.getElementById("topimage").style.backgroundImage =  `url("${this.src}")`;;
             nowBGIurl = "";       
         }
     }
-    nowBGIurl = nowBGImg.src = url;
-
+    nowBGIurl = nowBGImg.src = url.substr(0,4) == "http" ? url : "https://ffeng123.github.io/" + url;
 }
 
 /**
