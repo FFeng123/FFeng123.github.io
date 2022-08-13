@@ -200,6 +200,7 @@ function loadPage(arg){
         loading.v.fromd = arg.Ali;
         loading.v.st = 0;
         loading.v.ed = arg.Ali.length;
+        loading.v.now = 0;
     }
     loading.v.run(null);
     return true;
