@@ -101,7 +101,7 @@ function setTopImage(url){
     nowBGImg = new Image();
     nowBGImg.onload = function(){
         if(nowBGIurl == this.src){
-            document.getElementById("topimage").style.backgroundImage = "url(" + this.src + ")";
+            document.getElementById("topimage").style.backgroundImage = `url("${this.src}")`;
             nowBGIurl = "";       
         }
     }
