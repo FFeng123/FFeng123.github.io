@@ -1,0 +1,13 @@
+{
+    "id": "11",
+    "title": "读《数学女孩》",
+    "time": "2022年8月16日",
+    "markdown": "/datas/mds/读《数学女孩》.md",
+    "bg": "datas/images/11-1.jpg",
+    "mark": {
+        "学习":"#cbcb3d"
+    },
+    "connect":[
+        "11-1"
+    ]
+}
