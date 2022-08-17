@@ -1,0 +1,12 @@
+{
+    "id": "11",
+    "title": "斐波那契数列的通项公式",
+    "time": "2022年8月17日",
+    "markdown": "/datas/mds/数学女孩-斐波那契数列的通项公式.md",
+    "bg": "datas/images/11-1.jpg",
+    "mark": {
+    },
+    "connect":[
+        "11"
+    ]
+}
