@@ -1,0 +1,12 @@
+{
+    "id": "13",
+    "title": "与C++相处的几天",
+    "time": "2022年8月23日",
+    "markdown": "/datas/mds/与C++相处的几天.md",
+    "bg": "datas/images/13-1.jpg",
+    "mark": {
+        "开发":"#12aa9c"
+    },
+    "connect":[
+    ]
+}
