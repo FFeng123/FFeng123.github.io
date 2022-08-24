@@ -23,74 +23,49 @@ loading = {
     set v(a){
         this.va = a;
         document.getElementById("loadingMS").style.opacity = a ? 1 : 0;
-        /*if(!a && poperrs){
-            openArticle(poperrs);
-            poperrs = null;
-        }*/
     }
 };// 正在加载的数据
 pageDatas = {};// 文章数据
 var preload = "";// 用于url跳转
 
 // 获取id参数区间
-function getIDUrlpos(){
-    // 锁定到参数区域
-    let st = location.href.indexOf("?");
-    if(st == -1) st = location.href.length;
-    let ed = location.href.indexOf("#");
-    if(ed == -1) ed = location.href.length;
-    // 开始
-    let t = location.href.indexOf("id=",st);
-    if(t == -1 || t >= ed) return [];
-    st = t;
-    // 结束
-    t = location.href.indexOf("&",st);
-    if(t != -1 && t < ed) ed = t;
-    
-    return [st,ed];
+function getIDUrl(){
+    u = new URL(location.href);
+    ss = u.search.substr(1).split("&");
+    for(var i = 0;i < ss.length;i++){
+        if(ss[i].indexOf("id=") == 0){
+          return ss[i].substr(3);
+        }
+    }
+    return "";
 }
 
 /**
  * 设置文章ID到URL
  */
 function setIDUrl(id){
-    let se = getIDUrlpos();
-    let st,ed,wh = true;
-    if(se.length == 2){
-        st = se[0];
-        ed = se[1];
-    }else{
-        let t = location.href.indexOf("?");
-        let m = location.href.indexOf("#");
-        if(t == -1){// 尚无参数
-            if(m != -1) st = ed = m;
-            else st = ed = location.href.length;
-        }else{// 已有参数
-            st = ed = t + 1;
-            se = (st + 1) == (m == -1 ? location.href.length : m) ? [] : null;// 标记，需要加“&”
-            wh = false;// 标记，需要加问号
+    u = new URL(location.href);
+    ss = u.search.substr(1).split("&");
+    gt = false;
+    for(var i = 0;i < ss.length;i++){
+        if(ss[i].indexOf("id=") == 0){
+            ss[i] = "id=" + id;
+            gt = true;
+            if(id == null){
+                ss.splice(i,1);
+            }
         }
     }
-    se = location.href.substring(0,st) + (id == null ? "" : (wh ? "?" : "") + "id=" + String(id)) + (se == null ? "&" : "") + location.href.substring(ed);
-    if(se != location.href)
-        history.replaceState(id,"",se);
-}
-/*
-var poperrs = null;
-onpopstate = function(ev){
-    switch (ev.state) {
-        case -1:
-            setWebPage("P-home");
-            break;
-        case -2:
-            setWebPage("P-friend");
-            break;
-        default:
-            if(!openArticle(ev.state));
-                poperrs = ev.state;
-            break;
+    if(!gt && id != null){
+        ss.push("id=" + id);
     }
-}*/
+
+    u.search = ss.filter((e)=>{
+        return e;
+      }).join("&");
+    if(u.href != location.href)
+        history.replaceState(id,"",u.href);
+}
 /**
  * 设置顶部图片
  */
@@ -257,8 +232,8 @@ function init(){
     if(text) setTopImage(text.data);
     
     // 跳转文章
-    let se = getIDUrlpos();
-    if(se.length == 2) preload = location.href.substring(se[0] + 3,se[1]);
+    let se = getIDUrl();
+    if(se != "") preload = se;
 
     var h = 0;
     document.body.onresize = function(){
