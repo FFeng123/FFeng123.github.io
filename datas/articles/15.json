@@ -1,0 +1,14 @@
+{
+    "id": "15",
+    "title": "造四叉树",
+    "time": "2022年9月6日",
+    "markdown": "/datas/mds/造四叉树.md",
+    "bg": "datas/images/15-1.jpg",
+    "mark": {
+        "开发":"#12aa9c",
+        "学习":"#cbcb3d"
+    },
+    "connect":[
+        "14-1"
+    ]
+}
