@@ -1,0 +1,14 @@
+{
+    "id": "18",
+    "title": "机顶盒与Linux",
+    "time": "2022年10月24日",
+    "markdown": "/datas/mds/机顶盒与Linux.md",
+    "bg": "datas/images/18-1.jpg",
+    "mark": {
+        "学习":"#cbcb3d",
+        "实践":"#20a162",
+        "Linux":"#f8df70"
+    },
+    "connect":[
+    ]
+}
