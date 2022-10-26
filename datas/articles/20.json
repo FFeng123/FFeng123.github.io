@@ -5,8 +5,6 @@
     "markdown": "/datas/mds/原神的私服.md",
     "bg": "datas/images/20-1.jpg",
     "mark": {
-        "Linux":"#f8df70",
-        "开发":"#12aa9c",
         "实践":"#20a162"
     },
     "connect":[
