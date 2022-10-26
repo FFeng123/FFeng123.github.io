@@ -96,11 +96,11 @@ armbian自带了个写入emmc的命令，写入之后就不用插这个U盘了�
 
 dt.img文件的结构非常简单，文件头写了这些dtb文件的名称、起始地址、长度。
 
-![十六进制编辑器](datas/images/18-2.png)
+![十六进制编辑器](/datas/images/18-2.png)
 
 我把它们全部都提取出来了。
 
-![提取之后的文件](datas/images/18-3.png)
+![提取之后的文件](/datas/images/18-3.png)
 
 结果只需要一个，利用变砖系统的shell看了dtb的文件名（在/proc/device-tree/amlogic-dt-id里写着）。
 
@@ -124,7 +124,7 @@ dts文件的转换十分成功，可惜这个U盘在linux挂载之后插在windo
 
 这两个dts完全不一样，我想把一边的数据复制到另一半，但是完全看不懂。
 
-![dts文件](datas/images/18-4.png)
+![dts文件](/datas/images/18-4.png)
 
 最后搜索eth，修改了以太网的引脚，中断什么的，以为可以成功。
 
