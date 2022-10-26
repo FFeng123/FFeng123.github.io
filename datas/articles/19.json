@@ -1,8 +1,8 @@
 {
     "id": "19",
-    "title": "编写DDNS",
+    "title": "编写DDNS程序",
     "time": "2022年10月25日",
-    "markdown": "/datas/mds/编写DDNS.md",
+    "markdown": "/datas/mds/编写DDNS程序.md",
     "bg": "datas/images/19-1.jpg",
     "mark": {
         "Linux":"#f8df70",
