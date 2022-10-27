@@ -16,20 +16,29 @@ body{
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 main{
     flex: 1;
+    overflow: hidden;
 }
 .main {/* 网页的主要内容区 */
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items:flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4em;
 }
 
 .bottomBar{
     height: 3.5em;
-    margin-top: 3em;
+    margin-top: 10em;
     padding: 1em;
     background: rgb(59, 59, 59);
     position: relative;
@@ -45,21 +54,16 @@ main{
 
 
 .navline {/*导航栏的容器*/
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
-    height: auto;
+    height: 1.6em;
     font-size: 2.0em;
     user-select: none;
     overflow: visible;
     position: absolute;
     top: 0;
-
-    background: linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(51, 51, 51, 0.76),rgba(0, 0, 0, 0));
+    z-index: 60;
     
 }
 
@@ -78,6 +82,10 @@ a {
 
 img:not(.icon) {
     background: url("/images/loading.gif") no-repeat 50% 50%;
+    max-width: 100%;
+}
+img:not(.icon):not(#imgs-img):hover {
+    transform: scale(1.01);
 }
 
 
@@ -104,6 +112,7 @@ img:not(.icon) {
     border-bottom: 0.1em hidden rgb(83, 31, 179);
     cursor: pointer;
     white-space: nowrap;
+    z-index: 10;
 }
 
 .nav>a:hover{
@@ -131,14 +140,17 @@ img:not(.icon) {
 }
 .topbox{ /*页面顶部显示标题等 的容器*/
     width: 100%;
-    height: 13em;
-    margin-top: 3em;
+    height: 16em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
+}
+
+#indextopbox{
+    height: 100vh;
 }
 
 .topimage { /*页面顶部背景图片的容器*/
@@ -174,20 +186,15 @@ img:not(.icon) {
 
 
 .block { /*用于显示内容的框框*/
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    /*align-items: inherit;*/
     overflow: hidden;
 
-    border-radius: 0.5em;
+    border-radius: 0.1em;
     background-color: #fff;
-    box-shadow: 0 0 0.5em #000;
+    box-shadow: 0 0 0.2em #0008;
 
     /*min-width: 4em;
     /*min-height: 4em;*/
-    padding: 0.5em;
+    padding: 0.5em 0 0.5em 0;
     margin: 0.5em;
     position: relative;
 }
@@ -226,7 +233,7 @@ img:not(.icon) {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 
@@ -239,11 +246,10 @@ img:not(.icon) {
 }
 
 .list>div {
-    border-radius: 0.5em;
-    box-shadow: 0 0 0.5em #000;
+    box-shadow: 0 0 0.1em #0008;
 
     height: 200px;
-    margin: 1em 0.5em 1em 0.5em;
+    margin: 1em 0em 1em 0em;
     padding: 1em;
 
     overflow: hidden;
@@ -252,18 +258,16 @@ img:not(.icon) {
 }
 
 .list>div:hover{
-    transform: scale(1.005);
+    transform: translate(0em,-0.2em);
     transition-duration: 100ms;
+    box-shadow: 0 0.05em 0.3em #0008;
 }
 .list>div:active{
-    transform: scale(0.995);
     transition-duration: 100ms;
+    transform: translate(0em,-0.1em);
+    box-shadow: 0 0em 0.2em #0008;
 }
-/*
-.list code{
-    margin: 0.4em 0 0.4em 0;
-    box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.534);
-}*/
+
 .list>div>div>.more {/* 显示更多内容 */
     background: linear-gradient(rgba(255, 255, 255, 0),rgb(255, 255, 255));
     position:absolute;
@@ -312,7 +316,7 @@ img:not(.icon) {
 
 .button {
     padding: 0.2em 0.5em 0.2em 0.5em;
-    box-shadow: 0 0 0.3em #000a;
+    box-shadow: 0 0 0.1em #000a;
     border-radius: 0.1em;
     font-size: 2em;
 
@@ -401,3 +405,74 @@ img:not(.icon) {
 
     margin: 1em 0.5em 0em 0.5em;
 }
+
+.waterdiv {
+    height: 44px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@keyframes wateranim {
+    0% {background-position: 0;}
+    100% {background-position: 1536px;}
+}
+
+.waterdiv>div{
+    background: url(/images/water.png) repeat-x;
+    background-size: 1536px 100%;
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    animation: wateranim 16s infinite linear;
+    
+}
+
+.downpage{
+    background: url(/images/down.png) repeat-x;
+    background-size: contain;
+    width: 100%;
+}
+
+
+#mebox{
+    padding: 0.5em;
+    background: rgba(238, 238, 238, 0.411);
+    box-shadow: 0 0 0.05em #0008;
+    height: 4em;
+    width: 20em;
+    color: #fff;
+    text-shadow: 0 0 0.4em #000f;
+}
+
+#mebox:hover{
+    overflow: visible;
+    transform: scale(1.05);
+}
+
+.bigTitle2{
+    color: #fff;
+    text-shadow: 0 0 0.2em #0008;
+    font-size: 2em;
+}
+
+#imgs-box{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background-color: #0008;
+    z-index: 666;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+

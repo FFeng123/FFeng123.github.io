@@ -72,20 +72,49 @@ function setIDUrl(id){
 nowBGImg = null;
 nowBGIurl = "";
 function setTopImage(url){
-    nowBGImg = new Image();
-    nowBGImg.onload = function(){
-        if(nowBGIurl == this.src){
-            document.getElementById("topimage").style.backgroundImage =  `url("${this.src}")`;;
-            nowBGIurl = "";       
+    if(url){
+        if (document.getElementById("topimage").style.backgroundImage == ''){
+            document.getElementById("topimage").style.backgroundImage =  `url("${nowBGIurl}")`;
         }
+        nowBGImg = new Image();
+        nowBGImg.onload = function(){
+            if(nowBGIurl == this.src){
+                document.getElementById("topimage").style.backgroundImage =  `url("${this.src}")`;
+                nowBGIurl = "";       
+            }
+        }
+        nowBGIurl = nowBGImg.src = url.substr(0,4) == "http" ? url : "https://ffeng123.github.io/" + url;
+    }else{
+        document.getElementById("topimage").style.backgroundImage = '';
     }
-    nowBGIurl = nowBGImg.src = url.substr(0,4) == "http" ? url : "https://ffeng123.github.io/" + url;
 }
 
+function setBodyImage(url){
+    document.body.style.backgroundImage = `url("${url}")`
+}
+
+function setNavMode(f){
+    document.getElementById("navline").style.position = f ? "fixed" : "absolute"
+}
+
+function showBigImg(img){
+    document.getElementById("imgs-img").src = img;
+    document.getElementById("imgs-box").style.display = "flex";
+}
 /**
  * 加载页面基本数据
  */
 function loadPageData(){
+    // 绑定滚动事件
+    document.body.onscroll = (e)=>{
+
+    }
+    // 
+    document.getElementById("imgs-box").onclick = ()=>{
+        document.getElementById("imgs-box").style.display = "none"
+    }
+
+    //
     loading.v = true;
     fetch("/datas/articles.json",{"cache": 'no-cache'}).then(re => re.json(),re => re).then(re => {
         pageDatas = re;
@@ -285,13 +314,19 @@ function setPageN(){
 
 webState = null;// 当前的大页面
 webNav = null;// 当前的导航项
+homesl = 0;// 主页的滚动
 /**
  * 切换大页面
  */
 function setWebPage(page){
-    if(webState) webState.style.display = "none";
+    if(webState){
+        if(webState.id == "P-home"){
+            homesl = document.scrollingElement.scrollTop;    
+        }
+        webState.style.display = "none"
+    };
     if(webNav) webNav.className = "";
-
+    
     webState = document.getElementById(page);
     if(!webState) return;
     webState.style.display = "";
@@ -299,19 +334,38 @@ function setWebPage(page){
     switch (page) {
         case "P-home":// 主页
             setIDUrl(null);
-            setTopImage(pageDatas.imgHome);
+            setTopImage("");
+            setBodyImage(nowBGIurl = pageDatas.imgHome);
+            document.scrollingElement.scrollTop = homesl;
+            setNavMode(false);
             break;
         case "P-article":// 文章页
+            setBodyImage("")
+            document.body.scrollIntoView();
+            setNavMode(true);
             break;
         case "P-friend":// 友链
             setIDUrl(null);
             setTopImage(pageDatas.imgFriend);
             getFrineds();
+            document.body.scrollIntoView();
+            setNavMode(false);
             break;
     }
+
     webNav = document.getElementById("N" + page);
     if(webNav)  webNav.className = "Select";
-    document.body.scrollIntoView();
+
+    // 图片缩放绑定
+    for (let i = 0; i < document.images.length; i++) {
+        const imge = document.images[i];
+        if(imge.className.indexOf("dontimgs") == -1){
+            imge.onclick=(e)=>{
+                
+                showBigImg(e.target.src)
+            }
+        }
+    }
 }
 
 

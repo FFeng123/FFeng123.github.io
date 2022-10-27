@@ -1,18 +1,12 @@
 .main {/* 网页的主要内容区 */
-    flex-direction: row;
 }
 .main>.block{
     width: 60%;
+    max-width: 70em;
+    min-width: 48em;
+    box-sizing: border-box;
 }
 
-.aux {/* 侧栏 */
-    min-width: 15em;
-    width: 30%;
-    height: 100%;
-}
-#A-aux {
-    width: 35%;
-}
 #F-main{
     flex-direction: row;
     width: 80%;
@@ -25,7 +19,7 @@
     padding: 4em;
 }
 #A-saysBox{
-    padding: 0.5em 2em 0.5em 2em;
+    padding: 0.5em 2em 2.5em 2em;
     overflow: visible;
 }
 

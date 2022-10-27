@@ -9,13 +9,13 @@
     </head>
     <body>
         <!--导航栏-->
-        <div class="navline">
+        <div class="navline" id="navline">
             <ui class='nav'>
-                <a onclick="setWebPage('P-home')" id="NP-home"><li><img src="/images/main.svg" class="icon"> 主页</li></a>
+                <a onclick="setWebPage('P-home')" id="NP-home"><li><img src="/images/main.svg" class="icon dontimgs"> 主页</li></a>
                 <!--前面的区域以后再来探索吧-->
-                <!--<a href="#" id="NP-photo"><li><img src="/images/photo.svg" class="icon"> 相册</li></a>！！！！！！！！！！！前面的区域以后再来探索吧！-->
+                <!--<a href="#" id="NP-photo"><li><img src="/images/photo.svg" class="icon dontimgs"> 相册</li></a>！！！！！！！！！！！前面的区域以后再来探索吧！-->
                 <!--前面的区域以后再来探索吧-->
-                <!--<a onclick="setWebPage('P-friend')" id="NP-friend"><li><img src="/images/connect.svg" class="icon"> 友链</li></a>-->
+                <!--<a onclick="setWebPage('P-friend')" id="NP-friend"><li><img src="/images/connect.svg" class="icon dontimgs"> 友链</li></a>-->
             </ui>
             <img id="loadingMS" src="/images/loading.gif" style="box-shadow: 0 0 0.2em #000;padding: 0.1em;background-color: #fff;transition-duration: 50ms;position: absolute;right: 1em;">
         </div>
@@ -25,41 +25,43 @@
         </div>
         <!-- 主页 -->
         <main id="P-home" style="display: none;">
-            <div class="topbox">
+            <div class="topbox" id="indextopbox">
                 <p class="bigTitle">峰峰的小窝</p>
-            </div>
+                <p class="bigTitle2" id="me-namelast"></p>
+                <div style="height: 20%;"></div>
+                <div class="block" id="mebox">
+                    <div class="line">
+                        <img class="headimage dontimgs" id="me-head" src="https://avatars.githubusercontent.com/u/96224526">
+                        <div class="row" style="padding: 0.5em;flex-grow: 1;">
+                            <p style="font-size: 2em" id="me-name">峰峰</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="me-mess"></div>
+                </div>
+                <!--水波效果-->
+                <div class="waterdiv">
+                    <div style="z-index: 5;left:0px;opacity: 100%;top: 0;"></div>
+                    <div style="z-index: 4;left:-100px;opacity: 60%;top: -20px;"></div>
+                </div>
+                <!--下翻按钮-->
+
+            </div>  
             <!--主要内容-->
-            <div class="main">
+            <div class="main" style="background-color: #fff;min-height: calc(100vh - 56px - 16.5em);">
                 <div class="block" style="text-align: center;" id="main">
                     <h1><img src="/images/books.svg" class="icon"> わたしの物語</h1>
                     <div class="abstorigtop">
-                        <a class="button" onclick='loadPage({li: document.getElementById("list")})''><img src="/images/reload.svg" class="icon"></a>
+                        <a class="button" onclick='loadPage({li: document.getElementById("list")})''><img src="/images/reload.svg" class="icon dontimgs"></a>
                     </div>
                     <!--文章列表-->
                     <div id = "list" class="list"><h2 style="text-align: center;">正在准备</h2></div>
                     <!--翻页按钮-->
                     <div class="pageButtons" id="pages"></div>
                 </div>
-                <!--右侧副栏-->
-                <div class="aux" id="aux">
-                    <!--我的介绍-->
-                    <div class="block" id="mebox">
-                        <div class="line">
-                            <img class="headimage" id="me-head">
-                            <div class="row" style="padding: 0.5em;flex-grow: 1;">
-                                <p style="font-size: 1.2em" id="me-name"></p>
-                                <p id="me-namelast"></p>
-                            </div>
-                        </div>
-                        <hr/>
-                        <div id="me-mess"></div>
-                        <span style="height: 1.8em;"></span>
-                        <div class="downbox">
-                            <a onclick="openArticle('0')" style="cursor: pointer;">查看更多&gt&gt</a>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <!--底部花边-->
+            <div class="downpage" style="height: 56px;"></div>
         </main>
         <!-- 文章页 -->
         <main id="P-article" style="display: none;">
@@ -77,12 +79,9 @@
                         <div id = "A-list" class="list"></div>
                     </div>
                 </div>
-                <!--右侧副栏-->
-                <div class="aux" id="A-aux">
-                    <div class="block" id="A-saysBox">
-                        <div id="A-says" style="min-height: 3em;"></div>
+                <div class="block" id="A-saysBox">
+                    <div id="A-says" style="min-height: 3em;"></div>
 
-                    </div>
                 </div>
             </div>
         </main>
@@ -99,10 +98,15 @@
                 </div>
             </div>
         </main>
+        <!--页脚-->
         <div class="bottomBar">
             <p>峰峰的博客</p>
             <p>祝开心 o(￣▽￣)ｄ</p>
         </div>
+        <!--图片放大-->
+        <div id="imgs-box">
+            <img id="imgs-img">
+        </div>          
         <script src="/js/marked.min.js"></script>
         <script src="/js/highlight.min.js"></script>
         <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>

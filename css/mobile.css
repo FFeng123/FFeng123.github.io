@@ -1,20 +1,8 @@
 .main {/* 网页的主要内容区 */
-    flex-direction: column;
 }
 .main>.block{
     width: 100%;
     margin: 0;
-    box-sizing: border-box;
-}
-
-.aux {/* 侧栏 */
-    width: 100%;
-}
-.aux>.block{
-    width: 100%;
-    margin: 0;
-    margin-top: 0em;
-    
     box-sizing: border-box;
 }
 
