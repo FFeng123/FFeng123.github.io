@@ -395,23 +395,26 @@ function openArticle(inindex){
 
         let pageld = {li:document.getElementById("A-list"),Ali:loading.v.json.connect};
         document.getElementById("Alistee").style.display = pageld.Ali.length ? "" : "none";
+        try{
+            // 评论系统
+            var gitalk = new Gitalk({
+                clientID: '7e29ceda8c49868c79fe',
+                clientSecret: 'd2eb8a99d7432ac970a82f07cdac9e9da22b7456',
+                repo: 'FFeng123.github.io',
+                owner: 'FFeng123',
+                admin: ['FFeng123'],
+                id: "Article-" + String(loading.v.json.id),
+                distractionFreeMode: false,
+                title: loading.v.json.title,
+                body: "关于 \"" + loading.v.json.title + "\" 的评论",
+                language: "zh-CN",
 
-        // 评论系统
-        var gitalk = new Gitalk({
-            clientID: '7e29ceda8c49868c79fe',
-            clientSecret: 'd2eb8a99d7432ac970a82f07cdac9e9da22b7456',
-            repo: 'FFeng123.github.io',
-            owner: 'FFeng123',
-            admin: ['FFeng123'],
-            id: "Article-" + String(loading.v.json.id),
-            distractionFreeMode: false,
-            title: loading.v.json.title,
-            body: "关于 \"" + loading.v.json.title + "\" 的评论",
-            language: "zh-CN",
-
-        })
-        document.getElementById("A-says").innerHTML = "";
-        gitalk.render('A-says');
+            })
+            document.getElementById("A-says").innerHTML = "";
+            gitalk.render('A-says');
+        }catch(e){
+            console.log(e);
+        }
         // URL
         setIDUrl(loading.v.inindex);
 
