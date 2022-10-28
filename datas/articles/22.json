@@ -1,0 +1,13 @@
+{
+    "id": "22",
+    "title": "Novel AI 初体验",
+    "time": "2022年10月28日",
+    "markdown": "/datas/mds/Novel AI 初体验.md",
+    "bg": "datas/images/21-1.jpg",
+    "mark": {
+        "实践":"#20a162",
+        "AI":"#ee4866"
+    },
+    "connect":[
+    ]
+}
