@@ -1,5 +1,5 @@
 {
-    "articleAmount": 23,
+    "articleAmount": 24,
     "pointerFile": "/datas/articles/{index}.json",
     "pageLength": 5,
     "pagenN": 1,

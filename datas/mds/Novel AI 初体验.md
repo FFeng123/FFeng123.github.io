@@ -34,8 +34,6 @@ rm -d -r stable-diffusion-webui
 
 %cd stable-diffusion-webui
 
-!COMMANDLINE_ARGS="--exit" REQS_FILE="requirements.txt" python launch.py
-
 !COMMANDLINE_ARGS="--api --share --gradio-debug --gradio-auth hello:1123456" REQS_FILE="requirements.txt" python launch.py
 ```
 
