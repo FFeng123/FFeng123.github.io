@@ -23,12 +23,15 @@ Stable-diffusion目录装着/stableckpt/animefull-final-pruned/model.ckpt（命�
 
 ```python
 from google.colab import drive
-drive.mount('/content/drive')
-
-rm -d -r stable-diffusion-webui
-!git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
+import os
+if(not os.path.exists("/content/drive")):
+  drive.mount('/content/drive')
 
 %cd /content
+
+!rm -d -r stable-diffusion-webui
+!git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
+
 !rm -d -r stable-diffusion-webui/models
 !cp -r drive/MyDrive/novelai/models stable-diffusion-webui/models
 
