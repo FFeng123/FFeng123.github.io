@@ -1,6 +1,6 @@
 早就听说 Novel AI 了，画二次元图片的AI，今天我也来体验下。
 
-首先是资源：[50Gib的模型文件](https://0cc9146b6b7c01f9.gradio.app)
+首先是资源：[50Gib的模型文件](magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc&dn=novelaileak&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%)
 
 我的电脑是跑不动的，我需要一张可以的显卡。
 
