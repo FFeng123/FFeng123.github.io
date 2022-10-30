@@ -64,10 +64,10 @@ python -m http.server
 
 效果嘛~~仁者见仁智者见智~~
 
-<audio>
+<audio controls>
   <source src="/datas/res/25-1.wav" type="audio/wav">
 </audio>
-<audio>
+<audio controls>
   <source src="/datas/res/25-2.wav" type="audio/wav">
 </audio>
 
