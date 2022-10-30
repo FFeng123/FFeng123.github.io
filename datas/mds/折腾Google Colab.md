@@ -113,7 +113,7 @@ import os
 if(not os.path.exists("/content/drive")):
   drive.mount('/content/drive')
 
-%cd /content/drive/MyDrive/
+%cd /content/drive/MyDrive/stable-diffusion-webui
 
 !COMMANDLINE_ARGS="--api --share --gradio-debug --gradio-auth hello:1123456" REQS_FILE="requirements.txt" python launch.py
 ```
