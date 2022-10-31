@@ -11,7 +11,7 @@
         <!--加载遮挡-->
         <div id="loadMask" style="position: fixed;  background-color: #fff; z-index: 65535;  display: flex; font-size: 3em; align-items: center;justify-content: center;left: 0;right: 0;bottom: 0;top: 0;">
             <img src="/images/loading.gif">
-            <div style="position: absolute;right:0.2em;bottom: 0.2em;">加载中···</div>
+            <div style="position: absolute;right:0.2em;bottom: 0.2em;" id="maskTxt">加载中···</div>
         </div>
 
         </div>
@@ -38,13 +38,13 @@
                 <div style="height: 20%;"></div>
                 <div class="block" id="mebox">
                     <div class="line">
-                        <img class="headimage dontimgs" id="me-head" src="https://avatars.githubusercontent.com/u/96224526">
+                        <img class="headimage dontimgs" id="me-head" src="">
                         <div class="row" style="padding: 0.5em;flex-grow: 1;">
-                            <p style="font-size: 2em" id="me-name">峰峰</p>
+                            <p style="font-size: 2em" id="me-name">正在准备···</p>
                         </div>
                     </div>
                     <hr>
-                    <div id="me-mess"></div>
+                    <div id="me-mess">正在准备···</div>
                 </div>
                 <!--水波效果-->
                 <div class="waterdiv">
@@ -59,10 +59,10 @@
                 <div class="block" style="text-align: center;" id="main">
                     <h1><img src="/images/books.svg" class="icon"> わたしの物語</h1>
                     <div class="abstorigtop">
-                        <a class="button" onclick='loadPage({li: document.getElementById("list")})''><img src="/images/reload.svg" class="icon dontimgs"></a>
+                        <a class="button" onclick='reloadPage()'><img src="/images/reload.svg" class="icon dontimgs"></a>
                     </div>
                     <!--文章列表-->
-                    <div id = "list" class="list"><h2 style="text-align: center;">正在准备</h2></div>
+                    <div id = "list" class="list"><h2 style="text-align: center;">正在准备···</h2></div>
                     <!--翻页按钮-->
                     <div class="pageButtons" id="pages"></div>
                 </div>

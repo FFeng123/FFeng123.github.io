@@ -13,20 +13,38 @@ function getFirstLine(str, line){
     return str.substring(0,index == -1 ? str.length : index);
 }
 
+function loadIcon(){
+    document.getElementById("loadingMS").style.opacity = (loading.v2 || loading.v1) ? 1 : 0;
+}
 
 loading = {
-    va:null,
+    va:null,// 文章
+    vb:null,// 列表
     
-    get v(){
+    get v1(){
         return this.va;
     },
-    set v(a){
+    set v1(a){
         this.va = a;
-        document.getElementById("loadingMS").style.opacity = a ? 1 : 0;
+        loadIcon()
+    },
+    get v2(){
+        return this.vb;
+    },
+    set v2(a){
+        this.vb = a;
+        loadIcon()
     }
 };// 正在加载的数据
+
 pageDatas = {};// 文章数据
 var preload = "";// 用于url跳转
+
+function stopLoad(){
+    if(loading){
+        loading = 0
+    }
+}
 
 // 获取id参数区间
 function getIDUrl(){
@@ -105,22 +123,22 @@ function showBigImg(img){
  * 加载页面基本数据
  */
 function loadPageData(){
-    // 绑定滚动事件
-    document.body.onscroll = (e)=>{
-
-    }
+    // 跳转文章
+    let se = getIDUrl();
+    if(se != "") preload = se;
+    // 缩放事件
+    document.body.onresize = function(){
+        resize ? resize() : 0;// sakura.js
+    };
     // 放大后的突破点击事件
     document.getElementById("imgs-box").onclick = ()=>{
         document.getElementById("imgs-box").style.display = "none"
     }
 
-    //
-    loading.v = true;
     fetch("/datas/articles.json",{"cache": 'no-cache'}).then(re => re.json(),re => re).then(re => {
         pageDatas = re;
         setWebPage("P-home");
         // 加载我的信息
-        //document.getElementById("linkIcon").href = 
         document.getElementById("me-head").src = pageDatas.meHead;
         document.getElementById("me-name").innerHTML = pageDatas.meName;
         document.getElementById("me-namelast").innerHTML = pageDatas.meNameLast;
@@ -147,67 +165,87 @@ function loadPageData(){
         }
         list.appendChild(create_ent(">",-2));
         pageShow();
-        
+        // 
         if(preload != ""){
-            openArticle(preload);
+            openArticle(preload);// 加载文章界面
         }else{
-            loadPage({li: document.getElementById("list")});
+            document.getElementById("loadMask").style.display = "none"// 只有进入首页才解除遮挡，文章等到文章加战完成
         }
-    },re => loadPageData());
-    loading.v = null;
-
-    document.getElementById("loadMask").style.display = "none"
+        
+        loadPage({li: document.getElementById("list")});// 加载首页列表
+        
+    },re => {
+        document.getElementById("maskTxt").innerHTML = "加载失败，正在重新加载···"
+        loadPageData()
+    });
 }
+
+var homePageListLoaded = false;// 主页列表是否加载完全
 
 /**
  * 加载列表页面
  * 
  */
 function loadPage(arg){
-    if(loading.v) return false;
-    loading.v = {
+    if(loading.v1) {
+        loading.v1.newcall = arg// 中断之前的请求，开启新的请求
+        return
+    }
+    loading.v1 = {
         fromd: null,// 用于处理非主页文章加载的问题 
         toli: arg.li,
         st: pageDatas.pageLength * (pageDatas.pagenN - 1),// 第一篇
         ed: Math.min(pageDatas.pageLength * (pageDatas.pagenN - 1) + pageDatas.pageLength,pageDatas.articleAmount),// 最后一篇
         now: pageDatas.pageLength * (pageDatas.pagenN - 1),// 正在进行的那一篇
         run : function(markdown){
+            if(loading.v1.newcall){// 中断
+                let arg = loading.v1.newcall
+                loading.v1 = null
+                loadPage(arg)
+                return; 
+            }
             // 处理传回数据
             if(markdown){ // 传来了数据
-                loading.v.json.index = loading.v.fromd ? loading.v.fromd[loading.v.now] : pageDatas.articleAmount - loading.v.now - 1;
-                loading.v.now += 1;
+                loading.v1.json.index = loading.v1.fromd ? loading.v1.fromd[loading.v1.now] : pageDatas.articleAmount - loading.v1.now - 1;
+                loading.v1.now += 1;
                 
-                data = loading.v.json;
+                data = loading.v1.json;
                 data["markdown"] = getFirstLine(markdown,8);// 只取前几行
-                appendItem(data,loading.v.toli);
+                appendItem(data,loading.v1.toli);
                 hljs.initHighlightingOnLoad();
-            }if(loading.v.now >= loading.v.ed){
-                loading.v = null;
-                if(preload != ""){// 尚未加载主列表
-                    preload = "";
+            }if(loading.v1.now >= loading.v1.ed){// 加载结束条件
+                if (loading.v1.fromd == null){// 主列表加载完成
+                    homePageListLoaded = true;
+                }
+                loading.v1 = null;
+                if(!homePageListLoaded){// 尚未加载完成主列表
                     loadPage({li: document.getElementById("list")});
                 }
                 return;// 结束条件
             }
             // 请求数据
-            fetch(pageDatas.pointerFile.replace("{index}", String(loading.v.fromd ? loading.v.fromd[loading.v.now] : pageDatas.articleAmount - loading.v.now - 1))).then(re => re.json(),re => re).then(re => {// 拿到文字json
-                loading.v.json = re;// 记录json
+            fetch(pageDatas.pointerFile.replace("{index}", String(loading.v1.fromd ? loading.v1.fromd[loading.v1.now] : pageDatas.articleAmount - loading.v1.now - 1))).then(re => re.json(),re => re).then(re => {// 拿到文字json
+                loading.v1.json = re;// 记录json
                 return fetch(re["markdown"])
             }, re => re).then(re => re.text(),re => re).then(re => {
-                loading.v.run(re);// 成功得到页面
-            },re => loading.v.run())// 失败重试
+                loading.v1.run(re);// 成功得到页面
+            },{// 失败
+
+            })
         }
     }
     // 移除之前的节点
     arg.li.innerHTML = "";
-    if(arg.Ali){// 上面处理的是主页，特殊加载处理
-        loading.v.fromd = arg.Ali;
-        loading.v.st = 0;
-        loading.v.ed = arg.Ali.length;
-        loading.v.now = 0;
+    if(arg.Ali){// 当加载的不是主页
+        loading.v1.fromd = arg.Ali;
+        loading.v1.st = 0;
+        loading.v1.ed = arg.Ali.length;
+        loading.v1.now = 0;
+    }else{// 是主页
+        homePageListLoaded = false
     }
-    loading.v.run(null);
-    return true;
+    loading.v1.run(null);
+    return;
 }
 /**
  * 创建应该显示的标签，存在一个div里
@@ -257,21 +295,6 @@ function appendItem(data,li){
 
 }
 
-function init(){
-    // 界面初始化
-    let text = document.getElementById("topimage").childNodes[0];
-    if(text) setTopImage(text.data);
-    
-    // 跳转文章
-    let se = getIDUrl();
-    if(se != "") preload = se;
-
-    var h = 0;
-    document.body.onresize = function(){
-        resize ? resize() : 0;
-    };
-}
-
 /**
  * 更新页码显示
  */
@@ -292,8 +315,6 @@ function pageShow(){
  * 由按钮元素调用
  */
 function setPageN(){
-    if(loading.v) return;
-
     let pge = Number(this.getAttribute("page"));
     switch (pge) {
         case -1:
@@ -306,10 +327,9 @@ function setPageN(){
     
     pge = Math.max(1,Math.min(pageDatas.pageAmount,pge));
     if(pge != pageDatas.pagenN){
-        let lst = pageDatas.pagenN;
         pageDatas.pagenN = pge;
-        if(!loadPage({li: document.getElementById("list")})) pageDatas.pagenN = lst;// 加载失败，还是之前页码
-        else pageShow();
+        loadPage({li: document.getElementById("list")})
+        pageShow();
         
     }
 }
@@ -340,6 +360,7 @@ function setWebPage(page){
             setBodyImage(nowBGIurl = pageDatas.imgHome);
             document.scrollingElement.scrollTop = homesl;
             setNavMode(false);
+            if(!homePageListLoaded) reloadPage();
             break;
         case "P-article":// 文章页
             setBodyImage("")
@@ -378,24 +399,37 @@ function setWebPage(page){
  * 由内容按钮元素调用或传入index
  */
 function openArticle(inindex){
-    if(loading.v) return false;
+    if(loading.v2){
+        loading.v2.newcall = inindex;
+    }
     let index = typeof inindex == "string" ? inindex : this.getAttribute("index");
-    loading.v = {"inindex":index};
-    
+    loading.v2 = {"inindex":index};
+    function newcallreturn(){
+        if(!loading.v2)return true;
+        if(loading.v2.newcall){
+            let arg = loading.v2.newcall
+            loading.v2 = null
+            openArticle(arg)
+            return true
+        }
+        return false
+    }
     fetch(pageDatas.pointerFile.replace("{index}", index)).then(re => re.json(),re => re).then(re => {//解析完成json
-        loading.v.json = re;
+        loading.v2.json = re;
+        if(newcallreturn())return;// 中断
         return fetch(re["markdown"]);
     },re => re).then(re => re.text(),re => re).then(re => {// 成功得到页面
+        if(newcallreturn())return;// 中断
         document.getElementById("A-box").innerHTML = marked.parse(re);
-        document.getElementById("A-title").innerHTML = loading.v.json.title;
-        document.getElementById("A-time").innerHTML = loading.v.json.time;
+        document.getElementById("A-title").innerHTML = loading.v2.json.title;
+        document.getElementById("A-time").innerHTML = loading.v2.json.time;
         document.getElementById("A-mark").innerHTML = "";
-        document.getElementById("A-mark").appendChild(createMarks(loading.v.json.mark));
-        setTopImage(loading.v.json.bg);
+        document.getElementById("A-mark").appendChild(createMarks(loading.v2.json.mark));
+        setTopImage(loading.v2.json.bg);
         setWebPage("P-article");
         hljs.initHighlightingOnLoad();
 
-        let pageld = {li:document.getElementById("A-list"),Ali:loading.v.json.connect};
+        let pageld = {li:document.getElementById("A-list"),Ali:loading.v2.json.connect};
         document.getElementById("Alistee").style.display = pageld.Ali.length ? "" : "none";
         try{
             // 评论系统
@@ -405,28 +439,29 @@ function openArticle(inindex){
                 repo: 'FFeng123.github.io',
                 owner: 'FFeng123',
                 admin: ['FFeng123'],
-                id: "Article-" + String(loading.v.json.id),
+                id: "Article-" + String(loading.v2.json.id),
                 distractionFreeMode: false,
-                title: loading.v.json.title,
-                body: "关于 \"" + loading.v.json.title + "\" 的评论",
+                title: loading.v2.json.title,
+                body: "关于 \"" + loading.v2.json.title + "\" 的评论",
                 language: "zh-CN",
 
             })
             document.getElementById("A-says").innerHTML = "";
             gitalk.render('A-says');
-        }catch(e){
+        }catch(e){// 评论初始化失败
             console.log(e);
         }
         // URL
-        setIDUrl(loading.v.inindex);
+        setIDUrl(loading.v2.inindex);
 
-        loading.v = null;
+        loading.v2 = null;
         loadPage(pageld);
+        document.getElementById("loadMask").style.display = "none"
 
-    }, re => {
-        let iin = loading.v.inindex;
-        loading.v = null;
-        openArticle(iin);
+    }, re => {/*失败
+        let iin = loading.v2.inindex;
+        loading.v2 = null;
+        openArticle(iin);*/
     });
     return true;
 }
@@ -434,8 +469,6 @@ function openArticle(inindex){
 friendsIsLoaded = null;
 /**
  * 请求友链列表
- * 
- * 与文章加载不干涉，可以同时进行，不必检查loading
  */
 function getFrineds(){
     if(friendsIsLoaded) return;
@@ -473,7 +506,9 @@ function getFrineds(){
     
 }
 
-init();
 onload = loadPageData();
+reloadPage = ()=>{
+    loadPage({li: document.getElementById("list")})
+}
 
 alert = console.error = console.log = function(){}// 禁止输出

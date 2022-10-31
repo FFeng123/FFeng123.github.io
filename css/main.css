@@ -29,8 +29,7 @@ main{
 .main {/* 网页的主要内容区 */
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items:flex-start;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     padding-bottom: 4em;
