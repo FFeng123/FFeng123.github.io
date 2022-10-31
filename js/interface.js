@@ -109,7 +109,7 @@ function loadPageData(){
     document.body.onscroll = (e)=>{
 
     }
-    // 
+    // 放大后的突破点击事件
     document.getElementById("imgs-box").onclick = ()=>{
         document.getElementById("imgs-box").style.display = "none"
     }
@@ -155,6 +155,8 @@ function loadPageData(){
         }
     },re => loadPageData());
     loading.v = null;
+
+    document.getElementById("loadMask").style.display = "none"
 }
 
 /**
