@@ -1,0 +1,12 @@
+{
+    "id": "26",
+    "title": "疫情下的日常",
+    "time": "2022年10月30日",
+    "markdown": "/datas/mds/疫情下的日常.md",
+    "bg": "datas/images/26-1.png",
+    "mark": {
+        "日常":"#737"
+    },
+    "connect":[
+    ]
+}
