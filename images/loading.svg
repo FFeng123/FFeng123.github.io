@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="64" width="64">
+    <style>
+   
+   </style>
+    <circle cx="32" cy="32" r="16">
+        <animate attributeName="r" attributeType="XML"
+                from="0"  to="16"
+                begin="0s" dur="0.7s"
+                fill="remove" repeatCount="indefinite"/>
+        <animate attributeName="opacity" attributeType="XML" id="ao1"
+                from="0"  to="1"
+                begin="ao2.end;0s" dur="0.35s"
+                fill="remove"/>
+        <animate attributeName="opacity" attributeType="XML" id="ao2"
+                from="1"  to="0"
+                begin="ao1.end" dur="0.35s"
+                fill="remove"/>
+        <set attributeName="fill" attributeType="XML" id="s1"
+                to="#2177b8"
+                dur="0.7s"
+                begin="s6.end;0s"/>
+        <set attributeName="fill" attributeType="XML" id="s2"
+                to="#20894d"
+                dur="0.7s"
+                begin="s1.end"/>
+        <set attributeName="fill" attributeType="XML" id="s3"
+                to="#eb261a"
+                dur="0.7s"
+                begin="s2.end"/>
+        <set attributeName="fill" attributeType="XML" id="s4"
+                to="#61649f"
+                dur="0.7s"
+                begin="s3.end"/>
+        <set attributeName="fill" attributeType="XML" id="s5"
+                to="#ec4e8a"
+                dur="0.7s"
+                begin="s4.end"/>
+        <set attributeName="fill" attributeType="XML" id="s6"
+                to="#de7622"
+                dur="0.7s"
+                begin="s5.end"/>
+        
+    </circle>
+    <g transform="translate(32,32)">
+        <circle cx="0" cy="24" r="8" fill="#2177b8"/>
+        <circle cx="20.784609690826528" cy="11.999999999999998" r="8" fill="#20894d"/>
+        <circle cx="20.784609690826528" cy="-11.999999999999998" r="8" fill="#eb261a"/>
+        <circle cx="0" cy="-24" r="8" fill="#61649f"/>
+        <circle cx="-20.784609690826528" cy="-11.999999999999998" r="8" fill="#ec4e8a"/>
+        <circle cx="-20.784609690826528" cy="11.999999999999998" r="8" fill="#de7622"/>
+        <animateTransform attributeName="transform"
+                    type="rotate"
+                    from="0" to="360"
+                    begin="0s" dur="1.5s"
+                    repeatCount="indefinite"
+                    additive="sum"/>
+        <animateTransform attributeName="transform" id="g1a1"
+                    type="scale"
+                    from="1" to="0.7"
+                    begin="g1a2.end" dur="2s"
+                    additive="sum"/>
+        <animateTransform attributeName="transform" id="g1a2"
+                    type="scale"
+                    from="0.7" to="1"
+                    begin="g1a1.end; 0s" dur="2s"
+                    additive="sum"/>
+    </g>
+
+</svg>
