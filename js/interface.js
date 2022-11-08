@@ -17,6 +17,42 @@ function loadIcon(){
     document.getElementById("loadingMS").style.opacity = (loading.v2 || loading.v1) ? 1 : 0;
 }
 
+config = {
+    value:{
+        "sakura": !(navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)),
+        "videoSound": false
+    },
+    
+    save(){
+        document.cookie = JSON.stringify(this.value);
+    },
+    read(){
+        let readd;
+        try{
+            readd = JSON.parse(document.cookie);
+        }catch{
+            this.save();
+            return;
+        }
+        for(const k in this.value){
+            if(readd[k] != null){
+                this.value[k] = readd[k];
+            }
+        }
+        this.updata();
+    },
+    updata(){
+        if(Sakura){
+            this.value["sakura"] ? startSakura() : stopSakura();
+        }
+        if(bgVideo){
+            bgVideo.volume = this.value["videoSound"] ? 1 : 0;
+        }
+
+    }
+
+}
+
 loading = {
     va:null,// 文章
     vb:null,// 列表
@@ -112,7 +148,9 @@ function setBodyImage(url){
 }
 
 function setNavMode(f){
-    document.getElementById("navline").style.position = f ? "fixed" : "absolute"
+    //document.getElementById("navline").style.position = f ? "fixed" : "absolute"
+    let nav = document.getElementById("navline")
+    f ? nav.classList.add("navlineAmount") : nav.classList.remove("navlineAmount")
 }
 
 function showBigImg(img){
@@ -173,11 +211,12 @@ function loadPageData(){
         }
         
         loadPage({li: document.getElementById("list")});// 加载首页列表
-        
+        initVideo();
     },re => {
         document.getElementById("maskTxt").innerHTML = "加载失败，正在重新加载···"
         loadPageData()
     });
+    config.read()
 }
 
 var homePageListLoaded = false;// 主页列表是否加载完全
@@ -504,6 +543,12 @@ function getFrineds(){
         }
     },re => getFrineds());
     
+}
+
+function setSakuraState(){
+    config.value.sakura = !config.value.sakura
+    config.updata()
+    config.save()
 }
 
 onload = loadPageData();

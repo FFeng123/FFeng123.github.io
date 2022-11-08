@@ -6,9 +6,6 @@
     box-sizing: border-box;
 }
 
-#mebox {
-    display: none;
-}
 #F-main{
     flex-direction: row;
     width: 100%;

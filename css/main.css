@@ -61,9 +61,15 @@ main{
     overflow: visible;
     position: absolute;
     top: 0;
-    background: linear-gradient(rgba(51, 51, 51, 0.76),rgba(0, 0, 0, 0));
     z-index: 60;
-    filter: blur(0.5);
+    padding-bottom: 1.8em;
+}
+
+.navlineAmount {
+    backdrop-filter: blur(2px);
+    background-color: rgba(238, 238, 238, 0.2);
+    box-shadow: 0 0 0.2em #888;
+    position: fixed;
 }
 
 hr {
@@ -447,11 +453,13 @@ img:not(.icon):not(#imgs-img):hover {
     width: 20em;
     color: #fff;
     text-shadow: 0 0 0.4em #000f;
+    z-index: 7;
 }
 
 #mebox:hover{
     overflow: visible;
-    transform: scale(1.05);
+    transform: scale(1.05) translate(0,-60%);
+    background-color: rgba(238, 238, 238, 0.9);
 }
 
 .bigTitle2{
@@ -475,3 +483,54 @@ img:not(.icon):not(#imgs-img):hover {
 }
 
 
+#me-mess{
+    padding-top: 0.5em;
+}
+
+/* 当页面高度过窄 */
+@media screen and (max-height: 500px){
+    #mebox{
+        display: none;
+    }
+}
+
+.homeBtnBox{
+    display: flex;
+    position: relative;
+    z-index: 6;
+}
+
+.homeBtnBox > img{
+    display: block;
+    background-color: #fff8;
+    height: 2em;
+    padding: 0.2em;
+    cursor: pointer;
+    border-radius: 0.3em;
+    margin: 0.1em;
+    transition-duration: 100ms;
+}
+.homeBtnBox > img:hover{
+    transform: scale(1.05) translate(0,-0.1em);
+}
+.homeBtnBox > img:active{
+    transform: scale(0.95) translate(0,0.1em);
+}
+
+#bgvideo {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    z-index: -1;
+    background: rgb(16, 16, 16) url("/images/loading.svg") no-repeat center;
+}
+
+.noVisChilds > *:not(.mustVis){
+    opacity: 0;
+    transform: translate(0,10vh);
+    pointer-events: none;
+}
+.noVisChilds > .homeBtnBox{
+    transform: translate(calc(50vw - 3em),-20vh);
+    flex-direction: column;
+}

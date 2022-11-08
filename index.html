@@ -24,7 +24,7 @@
                 <!--前面的区域以后再来探索吧-->
                 <!--<a onclick="setWebPage('P-friend')" id="NP-friend"><li><img src="/images/connect.svg" class="icon dontimgs"> 友链</li></a>-->
             </ui>
-            <img id="loadingMS" src="/images/loading.svg" style="box-shadow: 0 0 0.2em #000;padding: 0.1em;background-color: #fff;transition-duration: 50ms;position: absolute;right: 1em;">
+            <img class="icon" id="loadingMS" src="/images/loading.svg" style="transition-duration: 50ms;position: fixed;right: 1em;height: 1.5em;">
         </div>
         <!--展示图-->
         <div class="topimage">
@@ -36,22 +36,30 @@
                 <p class="bigTitle">峰峰的小窝</p>
                 <p class="bigTitle2" id="me-namelast"></p>
                 <div style="height: 20%;"></div>
+                <!--按钮-->
+                <div class="homeBtnBox mustVis">
+                    <img class="icon dontimgs" src="/images/sakura.svg" onclick="setSakuraState()">
+                    <img class="icon dontimgs" src="/images/video.svg" onclick="onPlaystopBtn()">
+                    <img class="icon dontimgs" src="/images/sound.svg" id="soundBtn" onclick="onSoundBtn()">
+                    <img class="icon dontimgs" src="/images/next.svg" id="nextBtn" onclick="startVideoPlay(true)">
+                </div>
+                <!--关于我-->
                 <div class="block" id="mebox">
                     <div class="line">
                         <img class="headimage dontimgs" id="me-head" src="">
                         <div class="row" style="padding: 0.5em;flex-grow: 1;">
-                            <p style="font-size: 2em" id="me-name">正在准备···</p>
+                            <p style="font-size: 2em" id="me-name"></p>
                         </div>
                     </div>
-                    <hr>
-                    <div id="me-mess">正在准备···</div>
+                    <div id="me-mess"></div>
                 </div>
                 <!--水波效果-->
-                <div class="waterdiv">
+                <div class="waterdiv mustVis">
                     <div style="z-index: 5;left:0px;opacity: 100%;top: 0;"></div>
                     <div style="z-index: 4;left:-100px;opacity: 60%;top: -20px;"></div>
                 </div>
-                <!--下翻按钮-->
+                <!--背景视频-->
+                <video id="bgvideo" class="mustVis" preload="auto" style="opacity: 0;"></video>
 
             </div>  
             <!--主要内容-->
@@ -62,7 +70,7 @@
                         <a class="button" onclick='reloadPage()'><img src="/images/reload.svg" class="icon dontimgs"></a>
                     </div>
                     <!--文章列表-->
-                    <div id = "list" class="list"><h2 style="text-align: center;">正在准备···</h2></div>
+                    <div id = "list" class="list"><h2 style="text-align: center;"></h2></div>
                     <!--翻页按钮-->
                     <div class="pageButtons" id="pages"></div>
                 </div>
@@ -73,8 +81,8 @@
         <!-- 文章页 -->
         <main id="P-article" style="display: none;">
             <div class="topbox">
-                <p class="bigTitle" id="A-title">文章标题</p>
-                <p class="bigTitle bigTitle-2" id="A-time">时间</p>
+                <p class="bigTitle" id="A-title"></p>
+                <p class="bigTitle bigTitle-2" id="A-time"></p>
                 <div class="abstorigtop" style="top: 1em;right: 10%;" id="A-mark"></div>
             </div>
             <div class="main">
@@ -82,7 +90,7 @@
                     <div id="A-box" class="md"></div>
                     <!--指向的文章列表-->
                     <div id="Alistee">
-                        <h1 style="text-align: center;"><img src="/images/books.svg" class="icon"> 相关内容</h1>
+                        <h1 style="text-align: center;"><img src="/images/books.svg" class="icon"> </h1>
                         <div id = "A-list" class="list"></div>
                     </div>
                 </div>
@@ -101,7 +109,7 @@
             </div>
             <div class="main">
                 <div class="block" id="F-main">
-                    <h2 style="text-align: center;">正在准备</h2>
+                    <h2 style="text-align: center;"></h2>
                 </div>
             </div>
         </main>
@@ -117,7 +125,8 @@
         <script src="/js/marked.min.js"></script>
         <script src="/js/highlight.min.js"></script>
         <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-        <script src="/js/interface.js"></script>
         <script src="/js/sakura.js"></script>
+        <script src="/js/bgvideo.js"></script>
+        <script src="/js/interface.js"></script>
     </body>
 </html>
