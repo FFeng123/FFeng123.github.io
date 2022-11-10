@@ -1,0 +1,13 @@
+{
+    "id": "27",
+    "title": "音高提取程序",
+    "time": "2022年11月9日",
+    "markdown": "/datas/mds/音高提取程序.md",
+    "bg": "datas/images/27-1.jpg",
+    "mark": {
+        "实践":"#20a162",
+        "开发":"#12aa9c"
+    },
+    "connect":[
+    ]
+}
