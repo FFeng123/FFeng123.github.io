@@ -33,3 +33,6 @@
 .bigTitle-2{
     font-size: 1.5em;
 }
+.tools > div{
+    min-width: 50%;
+}

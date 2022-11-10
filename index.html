@@ -23,6 +23,7 @@
                 <!--<a href="#" id="NP-photo"><li><img src="/images/photo.svg" class="icon dontimgs"> 相册</li></a>！！！！！！！！！！！前面的区域以后再来探索吧！-->
                 <!--前面的区域以后再来探索吧-->
                 <!--<a onclick="setWebPage('P-friend')" id="NP-friend"><li><img src="/images/connect.svg" class="icon dontimgs"> 友链</li></a>-->
+                <a onclick="setWebPage('P-tools')" id="NP-tools"><li><img src="/images/tools.svg" class="icon dontimgs"> 工具</li></a>
             </ui>
             <img class="icon" id="loadingMS" src="/images/loading.svg" style="transition-duration: 50ms;position: fixed;right: 1em;height: 1.5em;">
         </div>
@@ -111,6 +112,16 @@
                 <div class="block" id="F-main">
                     <h2 style="text-align: center;"></h2>
                 </div>
+            </div>
+        </main>
+        <!--工具页-->
+        <main id="P-tools" style="display: none;">
+            <div class="topbox">
+                <p class="bigTitle">小工具</p>
+                <p class="bigTitle" style="font-size: 1.5em"></p>
+            </div>
+            <div class="main">
+                <div class="block tools" id="toolsList"></div>
             </div>
         </main>
         <!--页脚-->

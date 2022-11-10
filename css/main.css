@@ -62,7 +62,6 @@ main{
     position: absolute;
     top: 0;
     z-index: 60;
-    padding-bottom: 1.8em;
 }
 
 .navlineAmount {
@@ -70,6 +69,7 @@ main{
     background-color: rgba(238, 238, 238, 0.2);
     box-shadow: 0 0 0.2em #888;
     position: fixed;
+    background-color: #3331;
 }
 
 hr {
@@ -111,10 +111,8 @@ img:not(.icon):not(#imgs-img):hover {
     text-decoration: none;
     padding: 0 0.1em 0.05em 0.1em;
     margin: 0.1em 0.6em 0 0.6em ;
-    color: rgb(100, 102, 218);
+    color: rgb(247, 212, 168);
     background: none;
-    text-shadow: 0 0 0.1em rgb(255, 255, 255);
-    border-bottom: 0.1em hidden rgb(83, 31, 179);
     cursor: pointer;
     white-space: nowrap;
     z-index: 10;
@@ -125,8 +123,9 @@ img:not(.icon):not(#imgs-img):hover {
     transform: scale(1.05);
 }
 .nav>a:active{
+    transition-duration: 300ms;
     border-bottom: solid;
-    transform: scale(0.9);
+    transform: scale(0.96);
 }
 
 
@@ -136,13 +135,6 @@ img:not(.icon):not(#imgs-img):hover {
 }
 
 
-
-.nav>a:active{
-    transition-duration: 300ms;
-
-    background: rgba(255, 255, 255, 0.39);
-    color: #88f;
-}
 .topbox{ /*页面顶部显示标题等 的容器*/
     width: 100%;
     height: 16em;
@@ -199,7 +191,7 @@ img:not(.icon):not(#imgs-img):hover {
 
     /*min-width: 4em;
     /*min-height: 4em;*/
-    padding: 0.5em 0 0.5em 0;
+    padding: 0.8em 0 0.8em 0;
     margin: 0.5em;
     position: relative;
 }
@@ -533,4 +525,70 @@ img:not(.icon):not(#imgs-img):hover {
 .noVisChilds > .homeBtnBox{
     transform: translate(calc(50vw - 3em),-20vh);
     flex-direction: column;
+}
+
+
+.tools{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    user-select: none;
+    text-align: center;
+}
+.tools > div{
+    position: relative;
+    height: 8em;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    color: #fff;
+    text-shadow: 0 0 0.25em #000;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.tools .toolTitle{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(4px);
+
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #aaa3;
+    pointer-events: none;
+    z-index: 1;
+}
+.tools:hover .toolTitle{
+    opacity: 0;
+}
+.tools .toolMess{
+    height: 100%;
+    width: 100%;
+    padding: 1.5em;
+    background-color: #0005;
+    box-sizing: border-box;
+    word-wrap: anywhere;
+    overflow: hidden;
+}
+.tools .toolhoka{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1em;
+    background: #0004;
+    padding: 0 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.tools .toolhoka:hover{
+    background: #0008;
 }

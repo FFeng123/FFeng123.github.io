@@ -138,6 +138,7 @@ function setTopImage(url){
             }
         }
         nowBGIurl = nowBGImg.src = url.substr(0,4) == "http" ? url : "https://ffeng123.github.io/" + url;
+        // nowBGIurl = nowBGImg.src = url;
     }else{
         document.getElementById("topimage").style.backgroundImage = '';
     }
@@ -409,7 +410,16 @@ function setWebPage(page){
         case "P-friend":// 友链
             setIDUrl(null);
             setTopImage(pageDatas.imgFriend);
+            setBodyImage("")
             getFrineds();
+            document.body.scrollIntoView();
+            setNavMode(false);
+            break;
+        case "P-tools":// 工具
+            setIDUrl(null);
+            setTopImage(pageDatas.imgTools);
+            setBodyImage("")
+            getToolsList();
             document.body.scrollIntoView();
             setNavMode(false);
             break;
@@ -544,6 +554,41 @@ function getFrineds(){
     },re => getFrineds());
     
 }
+/**
+ * 加载工具列表
+ */
+var loadedTools = false;
+function getToolsList(){
+    if(loadedTools) return;
+    loadedTools = true;
+    
+    function openTool(){
+        window.open(pageDatas.tools[this.getAttribute("tid")].url);
+    }
+    function openToolSound(){
+        window.open(pageDatas.tools[this.getAttribute("tid")].sound);
+    }
+
+    let root = document.getElementById("toolsList");
+    for (const i in pageDatas.tools) {
+        let toold = pageDatas.tools[i];
+        let e = document.createElement("div");
+        e.setAttribute("tid",i);
+        e.innerHTML = `<div class="toolTitle">${toold.name}</div><div class="toolMess">${toold.mess}</div>`;
+        e.style.backgroundImage = `url("${toold.bg}")`;
+        e.onclick=openTool;
+        if(toold.sound){
+            let a = document.createElement("a");
+            a.className = "toolhoka";
+            a.onclick = openToolSound;
+            a.setAttribute("tid",i);
+            a.innerHTML = "源码";
+            e.appendChild(a);
+        }
+        root.appendChild(e);
+    }
+}
+
 
 function setSakuraState(){
     config.value.sakura = !config.value.sakura

@@ -11,7 +11,8 @@
     "memess":"是个高中生，爱好主要集中在计算机和互联网。<br>以广度优先学习和探索计算机领域ing",
 
     "imgHome":"images/indexBG.png",
-    "imgFriend":"images/friend.jpg",
+    "imgFriend":"images/bg/5.png",
+    "imgTools":"images/bg/6.png",
 
     "bgVideos":[
         "/videos/0.mp4",
@@ -19,5 +20,15 @@
         "/videos/2.mp4",
         "/videos/3.mp4",
         "/videos/4.mp4"
+    ],
+
+    "tools":[
+        {
+            "name": "音高提取",
+            "mess": "从波形里面提取MIDI<br>节奏轻轻松松导入编曲软件<br>可惜只有简单的曲子才可以",
+            "bg": "images/bg/1.png",
+            "url": "https://ffeng123.github.io/Audio-pitch-extraction-tool/",
+            "sound": "https://github.com/FFeng123/Audio-pitch-extraction-tool"
+        }
     ]
 }

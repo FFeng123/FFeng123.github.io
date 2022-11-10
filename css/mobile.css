@@ -50,3 +50,7 @@
 body{
     font-size: 3vw;
 }
+
+.tools > div{
+    min-width: 100%;
+}
