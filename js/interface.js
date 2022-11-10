@@ -140,7 +140,7 @@ function setTopImage(url,preload = true){
         nowBGIurl = nowBGImg.src = url.substr(0,4) == "http" ? url : "https://ffeng123.github.io/" + url;
         // nowBGIurl = nowBGImg.src = url;
     }else{
-        document.getElementById("topimage").style.backgroundImage = url;
+        document.getElementById("topimage").style.backgroundImage = `url("${url ? (url.substr(0,4) == "http" ? url : "https://ffeng123.github.io/" + url ): url}")`;
     }
 }
 
