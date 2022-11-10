@@ -537,7 +537,7 @@ img:not(.icon):not(#imgs-img):hover {
 }
 .tools > div{
     position: relative;
-    height: 8em;
+    height: 12em;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -565,7 +565,7 @@ img:not(.icon):not(#imgs-img):hover {
     pointer-events: none;
     z-index: 1;
 }
-.tools:hover .toolTitle{
+.tools> div:hover .toolTitle{
     opacity: 0;
 }
 .tools .toolMess{
@@ -576,6 +576,9 @@ img:not(.icon):not(#imgs-img):hover {
     box-sizing: border-box;
     word-wrap: anywhere;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .tools .toolhoka{
     position: absolute;

@@ -125,8 +125,8 @@ function setIDUrl(id){
  */
 nowBGImg = null;
 nowBGIurl = "";
-function setTopImage(url){
-    if(url){
+function setTopImage(url,preload = true){
+    if(url && preload){
         if (document.getElementById("topimage").style.backgroundImage == ''){
             document.getElementById("topimage").style.backgroundImage =  `url("${nowBGIurl}")`;
         }
@@ -140,7 +140,7 @@ function setTopImage(url){
         nowBGIurl = nowBGImg.src = url.substr(0,4) == "http" ? url : "https://ffeng123.github.io/" + url;
         // nowBGIurl = nowBGImg.src = url;
     }else{
-        document.getElementById("topimage").style.backgroundImage = '';
+        document.getElementById("topimage").style.backgroundImage = url;
     }
 }
 
@@ -409,7 +409,7 @@ function setWebPage(page){
             break;
         case "P-friend":// 友链
             setIDUrl(null);
-            setTopImage(pageDatas.imgFriend);
+            setTopImage(pageDatas.imgFriend,false);
             setBodyImage("")
             getFrineds();
             document.body.scrollIntoView();
@@ -417,7 +417,7 @@ function setWebPage(page){
             break;
         case "P-tools":// 工具
             setIDUrl(null);
-            setTopImage(pageDatas.imgTools);
+            setTopImage(pageDatas.imgTools,false);
             setBodyImage("")
             getToolsList();
             document.body.scrollIntoView();
@@ -563,10 +563,14 @@ function getToolsList(){
     loadedTools = true;
     
     function openTool(){
-        window.open(pageDatas.tools[this.getAttribute("tid")].url);
+        let url = pageDatas.tools[this.getAttribute("tid")].url;
+        if(url){
+            window.open(url);
+        }
     }
-    function openToolSound(){
+    function openToolSound(e){
         window.open(pageDatas.tools[this.getAttribute("tid")].sound);
+        e.stopPropagation()
     }
 
     let root = document.getElementById("toolsList");
