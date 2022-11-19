@@ -1,7 +1,7 @@
 @import url("/css/mobile.css") screen and (max-width: 48em);
 @import url("/css/desktop.css") screen and (min-width: 48em);
 @import url("/css/code/atom-one-light.css");
-@import url("https://unpkg.com/gitalk/dist/gitalk.css");
+@import url("/css/gitalk.css");
 @import url("/css/markdown.css");
 
 
