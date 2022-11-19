@@ -4,9 +4,7 @@
     "time": "2022年10月26日",
     "markdown": "/datas/mds/原神的私服.md",
     "bg": "datas/images/20-1.jpg",
-    "mark": {
-        "实践":"#20a162"
-    },
+    "mark": ["实践"],
     "connect":[
     ]
 }

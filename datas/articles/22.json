@@ -4,10 +4,7 @@
     "time": "2022年10月28日",
     "markdown": "/datas/mds/Novel AI 初体验.md",
     "bg": "datas/images/22-1.jpg",
-    "mark": {
-        "实践":"#20a162",
-        "AI":"#ee4866"
-    },
+    "mark": ["实践","AI"],
     "connect":[
     ]
 }

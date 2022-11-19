@@ -4,10 +4,7 @@
     "time": "2022年7月30日",
     "markdown": "/datas/mds/机顶盒与Android.md",
     "bg": "datas/images/8-1.jpg",
-    "mark": {
-        "实践":"#20a162",
-        "Android":"#31df84"
-    },
+    "mark": ["实践","Android"],
     "connect":[
     ]
 }

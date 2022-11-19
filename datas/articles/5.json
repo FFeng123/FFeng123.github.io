@@ -4,9 +4,7 @@
     "time": "2022年3月31日起",
     "markdown": "/datas/mds/关于疫情被封校这档事.md",
     "bg": "datas/images/5-1.jpg",
-    "mark": {
-        "日常":"#737"
-    },
+    "mark": ["日常"],
     "connect":[
         "5-1",
         "5-2"

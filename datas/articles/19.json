@@ -4,11 +4,7 @@
     "time": "2022年10月25日",
     "markdown": "/datas/mds/编写DDNS程序.md",
     "bg": "datas/images/19-1.jpg",
-    "mark": {
-        "Linux":"#f8df70",
-        "开发":"#12aa9c",
-        "实践":"#20a162"
-    },
+    "mark": ["Linux","开发","实践"],
     "connect":[
     ]
 }

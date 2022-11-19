@@ -4,9 +4,7 @@
     "time": "2022年8月16日",
     "markdown": "/datas/mds/读《数学女孩》.md",
     "bg": "datas/images/11-1.jpg",
-    "mark": {
-        "学习":"#cbcb3d"
-    },
+    "mark": ["学习"],
     "connect":[
         "11-1",
         "11-2"

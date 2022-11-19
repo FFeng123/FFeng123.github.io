@@ -292,11 +292,13 @@ function loadPage(arg){
  */
 function createMarks(marks){
     let re = document.createElement("div");
+    marks = marks.sort()
     for (i in marks) {
+        let name = marks[i];
         let ee = document.createElement("span");
         ee.className = "markblock";
-        ee.appendChild(document.createTextNode(i));
-        ee.style.backgroundColor = marks[i];
+        ee.appendChild(document.createTextNode(name));
+        ee.style.backgroundColor = pageDatas.tags[name];
         re.appendChild(ee);
     }
     return re;

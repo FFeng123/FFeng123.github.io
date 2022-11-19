@@ -4,9 +4,7 @@
     "time": "2021年12月22日",
     "markdown": "/datas/mds/关于我.md",
     "bg": "datas/images/0-1.jpg",
-    "mark": {
-        "介绍":"#fa5d19"
-    },
+    "mark": ["介绍"],
     "connect":[
     ]
 }

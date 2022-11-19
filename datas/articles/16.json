@@ -4,9 +4,7 @@
     "time": "2022年9月10日",
     "markdown": "/datas/mds/重新认识CMake.md",
     "bg": "datas/images/16-1.jpg",
-    "mark": {
-        "学习":"#cbcb3d"
-    },
+    "mark": ["学习"],
     "connect":[
     ]
 }

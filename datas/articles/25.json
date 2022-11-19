@@ -4,10 +4,7 @@
     "time": "2022年10月30日",
     "markdown": "/datas/mds/MockingBird初体验.md",
     "bg": "datas/images/25-1.jpg",
-    "mark": {
-        "实践":"#20a162",
-        "AI":"#ee4866"
-    },
+    "mark": ["实践","AI"],
     "connect":[
     ]
 }

@@ -4,9 +4,7 @@
     "time": "2022年9月2日",
     "markdown": "/datas/mds/疫情又来了.md",
     "bg": "datas/images/14-1.jpg",
-    "mark": {
-        "日常":"#737"
-    },
+    "mark": ["日常"],
     "connect":[
         "14-1"
     ]

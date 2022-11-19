@@ -4,9 +4,7 @@
     "time": "2021年12月25日",
     "markdown": "/datas/mds/2021 年总结.md",
     "bg": "datas/images/3-1.jpg",
-    "mark": {
-        "总结":"#12aa9c"
-    },
+    "mark": ["总结"],
     "connect":[
     ]
 }

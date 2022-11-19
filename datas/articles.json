@@ -14,6 +14,20 @@
     "imgFriend":"images/bg/1.png",
     "imgTools":"images/bg/1.png",
 
+    
+
+    "tags":{
+        "介绍":"#fa5d19",
+        "开发":"#12aa9c",
+        "实践":"#20a162",
+        "总结":"#12aa9c",
+        "日常":"#737",
+        "学习":"#cbcb3d",
+        "Android":"#31df84",
+        "Linux":"#f8df70",
+        "AI":"#ee4866"
+    },
+
     "bgVideos":[
         "/videos/0.mp4",
         "/videos/1.mp4",
@@ -25,7 +39,6 @@
         "/videos/7.mp4",
         "/videos/8.mp4"
     ],
-
     "tools":[
         {
             "name": "音高提取",

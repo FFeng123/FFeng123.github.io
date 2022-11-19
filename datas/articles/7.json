@@ -4,9 +4,7 @@
     "time": "2022年6月26日",
     "markdown": "/datas/mds/RSA算法的研究.md",
     "bg": "datas/images/7-1.jpg",
-    "mark": {
-        "学习":"#cbcb3d"
-    },
+    "mark": ["学习"],
     "connect":[
     ]
 }

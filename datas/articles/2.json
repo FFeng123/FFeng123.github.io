@@ -4,9 +4,7 @@
     "time": "2021年12月24日",
     "markdown": "/datas/mds/“物尽其用”.md",
     "bg": "datas/images/2-1.jpg",
-    "mark": {
-        "实践":"#20a162"
-    },
+    "mark": ["实践"],
     "connect":[
     ]
 }

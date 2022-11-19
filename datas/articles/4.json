@@ -4,9 +4,7 @@
     "time": "2021年12月29日",
     "markdown": "/datas/mds/当老师的初体验.md",
     "bg": "datas/images/4-1.jpg",
-    "mark": {
-        "实践":"#20a162"
-    },
+    "mark": ["实践"],
     "connect":[
     ]
 }

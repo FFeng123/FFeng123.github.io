@@ -4,10 +4,7 @@
     "time": "2022年8月13日",
     "markdown": "/datas/mds/画Live2D模型.md",
     "bg": "datas/images/10-1.jpg",
-    "mark": {
-        "学习":"#cbcb3d",
-        "实践":"#20a162"
-    },
+    "mark": ["学习","实践"],
     "connect":[
     ]
 }

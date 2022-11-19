@@ -4,9 +4,7 @@
     "time": "2021年12月22日",
     "markdown": "/datas/mds/小窝建成.md",
     "bg": "datas/images/1-1.jpg",
-    "mark": {
-        "开发":"#12aa9c"
-    },
+    "mark": ["开发"],
     "connect":[
     ]
 }

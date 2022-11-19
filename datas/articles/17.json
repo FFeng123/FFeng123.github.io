@@ -4,10 +4,7 @@
     "time": "2022年10月6日",
     "markdown": "/datas/mds/Ipv6的探索.md",
     "bg": "datas/images/17-1.jpg",
-    "mark": {
-        "学习":"#cbcb3d",
-        "实践":"#20a162"
-    },
+    "mark": ["学习","实践"],
     "connect":[
     ]
 }

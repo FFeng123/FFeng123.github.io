@@ -4,9 +4,7 @@
     "time": "2022年10月27日",
     "markdown": "/datas/mds/修改博客样式.md",
     "bg": "datas/images/21-1.jpg",
-    "mark": {
-        "开发":"#12aa9c"
-    },
+    "mark": ["开发"],
     "connect":[
     ]
 }

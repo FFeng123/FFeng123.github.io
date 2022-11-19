@@ -4,9 +4,7 @@
     "time": "2022年8月1日",
     "markdown": "/datas/mds/当志愿者的一早晨.md",
     "bg": "datas/images/9-1.jpg",
-    "mark": {
-        "实践":"#20a162"
-    },
+    "mark": ["实践"],
     "connect":[
     ]
 }
