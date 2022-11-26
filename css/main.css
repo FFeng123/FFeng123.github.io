@@ -93,6 +93,10 @@ img:not(.icon):not(#imgs-img):hover {
     transform: scale(1.01);
 }
 
+video{
+    max-width: 100%;
+}
+
 
 .nav { /* 导航栏的链接区 */
     display: flex;

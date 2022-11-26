@@ -387,6 +387,8 @@ function setWebPage(page){
         if(webState.id == "P-home"){
             homesl = document.scrollingElement.scrollTop;    
         }
+        if(page != "P-article")
+            document.getElementById("A-box").innerHTML = ""// 清理之前文章的数据
         webState.style.display = "none"
     };
     if(webNav) webNav.className = "";
