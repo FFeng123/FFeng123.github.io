@@ -1,5 +1,5 @@
 {
-    "articleAmount": 30,
+    "articleAmount": 31,
     "pointerFile": "/datas/articles/{index}.json",
     "pageLength": 5,
     "pagenN": 1,
@@ -46,6 +46,13 @@
             "bg": "images/bg/5.png",
             "url": "https://ffeng123.github.io/Audio-pitch-extraction-tool/",
             "sound": "https://github.com/FFeng123/Audio-pitch-extraction-tool"
+        },
+        {
+            "name": "M3U8下载",
+            "mess": "下载M3U8<br>合并M3U8里面细碎的TS文件<br>注意跨域问题哦",
+            "bg": "images/bg/7.png",
+            "url": "https://ffeng123.github.io/M3U8-download-tool/",
+            "sound": "https://github.com/FFeng123/M3U8-download-tool"
         },
         {
             "name": "敬请期待",
