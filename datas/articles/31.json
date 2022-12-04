@@ -1,0 +1,10 @@
+{
+    "id": "31",
+    "title": "学习C#",
+    "time": "2022年12月4日",
+    "markdown": "/datas/mds/学习Csharp.md",
+    "bg": "datas/images/31-1.jpg",
+    "mark": ["学习"],
+    "connect":[
+    ]
+}
