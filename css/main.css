@@ -183,6 +183,7 @@ video{
     animation: BGanim 70s infinite cubic-bezier(0.15, 0, 0.85, 1);
     transition-property: background-image;
     transition-duration: 600ms;
+    filter: brightness(0.6);
 }
 
 
