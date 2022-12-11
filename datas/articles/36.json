@@ -1,0 +1,10 @@
+{
+    "id": "36",
+    "title": "我的服务器",
+    "time": "2022年12月11日",
+    "markdown": "/datas/mds/我的服务器.md",
+    "bg": "datas/images/36-1.png",
+    "mark": ["Linux","Android","实践","开发"],
+    "connect":[
+    ]
+}
