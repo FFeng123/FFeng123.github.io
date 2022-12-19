@@ -24,6 +24,7 @@
                 <!--前面的区域以后再来探索吧-->
                 <!--<a onclick="setWebPage('P-friend')" id="NP-friend"><li><img src="/images/connect.svg" class="icon dontimgs"> 友链</li></a>-->
                 <a onclick="setWebPage('P-tools')" id="NP-tools"><li><img src="/images/tools.svg" class="icon dontimgs"> 工具</li></a>
+                <a onclick="setWebPage('P-netdev')" id="NP-netdev" style="display: none;"><li><img src="/images/netdev.svg" class="icon dontimgs"> 网盘</li></a>
                 
             </ui>
             <img class="icon" id="loadingMS" src="/images/loading.svg" style="transition-duration: 50ms;position: fixed;right: 1em;height: 1.5em;pointer-events: none;">
@@ -123,6 +124,16 @@
             </div>
             <div class="main">
                 <div class="block tools" id="toolsList"></div>
+            </div>
+        </main>
+        <!--网盘页-->
+        <main id="P-netdev" style="display: none;">
+            <div class="topbox">
+                <p class="bigTitle">网盘</p>
+                <p class="bigTitle" style="font-size: 1.5em"></p>
+            </div>
+            <div class="main">
+                <iframe src="" frameborder="0" id="netdeviframe" class="block"></iframe>
             </div>
         </main>
         <!--页脚-->

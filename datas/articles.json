@@ -13,8 +13,9 @@
     "imgHome":"images/indexBG.png",
     "imgFriend":"images/bg/1.png",
     "imgTools":"images/bg/1.png",
+    "imgNetdev":"images/bg/7.png",
 
-    
+    "netdev": "http://ffeng123.msns.cn:801",
 
     "tags":{
         "介绍":"#fa5d19",

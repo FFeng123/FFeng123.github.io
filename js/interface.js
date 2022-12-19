@@ -75,6 +75,7 @@ loading = {
 
 pageDatas = {};// 文章数据
 var preload = "";// 用于url跳转
+var initNetDev = false;
 
 function stopLoad(){
     if(loading){
@@ -272,6 +273,24 @@ function loadPage(arg){
             },{// 失败
 
             })
+            // 测试网盘是否可达
+            tstf = async function(url) {
+                try {
+                  const response = await fetch(url);
+                  if (response.ok) {
+                    return true;
+                  } else {
+                    return true;
+                  }
+                } catch (error) {
+                  return false;
+                }
+            };
+            tstf(pageDatas.netdev).then(re => {
+                if(re){
+                    document.getElementById("NP-netdev").style.display = ""
+                }
+            })
         }
     }
     // 移除之前的节点
@@ -424,6 +443,17 @@ function setWebPage(page){
             setTopImage(pageDatas.imgTools,false);
             setBodyImage("")
             getToolsList();
+            document.body.scrollIntoView();
+            setNavMode(false);
+            break;
+        case "P-netdev":// 网盘
+            setIDUrl(null);
+            setTopImage(pageDatas.imgNetdev,false);
+            setBodyImage("")
+            if(!initNetDev){
+                initNetDev = true;
+                document.getElementById("netdeviframe").src = pageDatas.netdev;
+            }
             document.body.scrollIntoView();
             setNavMode(false);
             break;

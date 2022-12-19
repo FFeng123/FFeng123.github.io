@@ -601,3 +601,9 @@ video{
 .tools .toolhoka:hover{
     background: #0008;
 }
+
+#netdeviframe{
+    height: 100vh;
+    overflow: hidden;
+    padding: 0 0 0 0;
+}
