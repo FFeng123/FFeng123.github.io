@@ -1,6 +1,7 @@
 {
-    "articleAmount": 43,
+    "articleAmount": 44,
     "pointerFile": "/datas/articles/{index}.json",
+    "pageMaxView": 5,
     "pageLength": 5,
     "pagenN": 1,
     "friendFile": "/datas/friends.json",
