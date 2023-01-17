@@ -214,6 +214,24 @@ function loadPageData(){
         
         loadPage({li: document.getElementById("list")});// 加载首页列表
         initVideo();
+        // 测试网盘是否可达
+        let tstf = async function(url) {
+            try {
+                const response = await fetch(url);
+                if (response.ok) {
+                return true;
+                } else {
+                return true;
+                }
+            } catch (error) {
+                return false;
+            }
+        };
+        tstf(pageDatas.netdev).then(re => {
+            if(re){
+                document.getElementById("NP-netdev").style.display = ""
+            }
+        })
     },re => {
         document.getElementById("maskTxt").innerHTML = "加载失败，正在重新加载···"
         loadPageData()
@@ -272,24 +290,6 @@ function loadPage(arg){
                 loading.v1.run(re);// 成功得到页面
             },{// 失败
 
-            })
-            // 测试网盘是否可达
-            tstf = async function(url) {
-                try {
-                  const response = await fetch(url);
-                  if (response.ok) {
-                    return true;
-                  } else {
-                    return true;
-                  }
-                } catch (error) {
-                  return false;
-                }
-            };
-            tstf(pageDatas.netdev).then(re => {
-                if(re){
-                    document.getElementById("NP-netdev").style.display = ""
-                }
             })
         }
     }
@@ -367,6 +367,13 @@ function pageShow(){
     list.children[0].style.display = pge == 1 ? "none" : "";// 上一页
     list.children[list.children.length - 1].style.display = pge == list.children.length - 2 ? "none" : "";// 下一页
     (showingPage = list.children[pge]).className = "Select";
+    // 页码区间
+    let viewpgea = Math.max(2,pge - Math.floor(pageDatas.pageMaxView / 2));
+    let viewpgeb = Math.min(viewpgea + pageDatas.pageMaxView,list.children.length - 2);
+    viewpgea = Math.max(2,viewpgeb - pageDatas.pageMaxView)
+    for (let i = 2; i < list.children.length - 2; i++) {
+        list.children[i].style.display = (i >= viewpgea && i < viewpgeb) ? "" : "none";
+    }
 }
 
 
