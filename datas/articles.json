@@ -1,36 +1,31 @@
 {
-    "articleAmount": 45,
+    "articleAmount": 46,
     "pointerFile": "/datas/articles/{index}.json",
     "pageMaxView": 5,
     "pageLength": 5,
     "pagenN": 1,
     "friendFile": "/datas/friends.json",
-    
     "meName": "峰峰",
     "meHead": "https://avatars.githubusercontent.com/u/96224526",
-    "meNameLast":"我能想到的，最大的成功就是无愧于自己的心。",
-    "memess":"是个高中生，爱好主要集中在计算机和互联网。<br>以广度优先学习和探索计算机领域ing",
-
-    "imgHome":"images/indexBG.png",
-    "imgFriend":"images/bg/1.png",
-    "imgTools":"images/bg/1.png",
-    "imgNetdev":"images/bg/7.png",
-
+    "meNameLast": "我能想到的，最大的成功就是无愧于自己的心。",
+    "memess": "是个高中生，爱好主要集中在计算机和互联网。<br>以广度优先学习和探索计算机领域ing",
+    "imgHome": "images/indexBG.png",
+    "imgFriend": "images/bg/1.png",
+    "imgTools": "images/bg/1.png",
+    "imgNetdev": "images/bg/7.png",
     "netdev": "http://ffeng123.msns.cn:801",
-
-    "tags":{
-        "介绍":"#fa5d19",
-        "开发":"#12aa9c",
-        "实践":"#20a162",
-        "总结":"#12aa9c",
-        "日常":"#737",
-        "学习":"#cbcb3d",
-        "Android":"#31df84",
-        "Linux":"#f8df70",
-        "AI":"#ee4866"
+    "tags": {
+        "介绍": "#fa5d19",
+        "开发": "#12aa9c",
+        "实践": "#20a162",
+        "总结": "#12aa9c",
+        "日常": "#737",
+        "学习": "#cbcb3d",
+        "Android": "#31df84",
+        "Linux": "#f8df70",
+        "AI": "#ee4866"
     },
-
-    "bgVideos":[
+    "bgVideos": [
         "/videos/0.mp4",
         "/videos/1.mp4",
         "/videos/2.mp4",
@@ -41,7 +36,7 @@
         "/videos/7.mp4",
         "/videos/8.mp4"
     ],
-    "tools":[
+    "tools": [
         {
             "name": "音高提取",
             "mess": "从波形里面提取MIDI<br>节奏轻轻松松导入编曲软件<br>可惜只有简单的曲子才可以",

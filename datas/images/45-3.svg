@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 3669 2502" style="enable-background:new 0 0 3669 2502;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#333333;}
+	.st1{fill:none;}
+	.st2{fill:none;stroke:#F0F0F0;stroke-miterlimit:10;}
+	.st3{fill:#F0F0F0;stroke:#F0F0F0;stroke-miterlimit:10;}
+	.st4{fill:#60A917;stroke:#2D7600;}
+	.st5{fill:#FFFFFF;}
+	.st6{font-family:'ArialMT';}
+	.st7{font-size:12px;}
+	.st8{fill:none;stroke:#F0F0F0;stroke-miterlimit:10;stroke-dasharray:3,3;}
+	.st9{enable-background:new    ;}
+	.st10{font-family:'AdobeSongStd-Light-GBpc-EUC-H';}
+	.st11{fill:#18141D;stroke:#F0F0F0;}
+	.st12{fill:#F0F0F0;}
+	.st13{fill:#18141D;}
+	.st14{fill:none;stroke:#60A917;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st15{fill:none;stroke:#E3C800;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st16{fill:#18141D;stroke:#F0F0F0;stroke-miterlimit:10;}
+	.st17{font-size:10px;}
+</style>
+<g id="图层_2">
+	<polyline class="st0" points="3669,2.5 3669,2497.5 0.5,2497.5 0.5,2.5 	"/>
+</g>
+<g id="图层_1">
+	<path class="st1" d="z"/>
+	<g>
+		<path pointer-events="stroke" class="st2" d="M760.5,1011.5c0,0,162.2,0,486.6,0"/>
+		<path pointer-events="all" class="st3" d="M1252.4,1011.5l-7,3.5l1.8-3.5l-1.8-3.5L1252.4,1011.5z"/>
+		<path pointer-events="stroke" class="st2" d="M720.5,971.5"/>
+		<path pointer-events="stroke" class="st2" d="M720.5,971.5"/>
+		<path pointer-events="stroke" class="st2" d="M680.5,1011.5c-110,0-165-3.3-165-10s-52.9-10-158.6-10"/>
+		<path pointer-events="all" class="st3" d="M351.6,991.5l7-3.5l-1.8,3.5l1.8,3.5L351.6,991.5z"/>
+		<path pointer-events="stroke" class="st2" d="M748.8,983.2c0,72.2,167,108.3,500.9,108.3s500.8-57.9,500.8-173.6"/>
+		<path pointer-events="all" class="st3" d="M1750.5,912.6l3.5,7l-3.5-1.8l-3.5,1.8L1750.5,912.6z"/>
+		<path pointer-events="stroke" class="st2" d="M748.8,983.2c147.8,0,221.7-134.5,221.7-403.3"/>
+		<path pointer-events="all" class="st3" d="M970.5,574.6l3.5,7l-3.5-1.8l-3.5,1.8L970.5,574.6z"/>
+		<path pointer-events="stroke" class="st2" d="M680.5,1011.5c-120,0-180,51.2-180,153.6"/>
+		<path pointer-events="all" class="st3" d="M500.5,1170.4l-3.5-7l3.5,1.8l3.5-1.8L500.5,1170.4z"/>
+		<path pointer-events="stroke" class="st2" d="M748.8,983.2"/>
+		<path pointer-events="stroke" class="st2" d="M720.5,1051.5"/>
+		<ellipse pointer-events="all" class="st4" cx="720.5" cy="1011.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 710.1611 1015.5)" class="st5 st6 st7">root</text>
+		</g>
+		<path pointer-events="stroke" class="st8" d="M2260.5,841.5c73.3,0,110,54.5,110,163.6"/>
+		<path pointer-events="all" class="st3" d="M2370.5,1010.4l-3.5-7l3.5,1.8l3.5-1.8L2370.5,1010.4z"/>
+		<path pointer-events="stroke" class="st2" d="M2260.5,841.5c0,0,141.2,0,423.6,0"/>
+		<path pointer-events="all" class="st3" d="M2689.4,841.5l-7,3.5l1.8-3.5l-1.8-3.5L2689.4,841.5z"/>
+		<ellipse pointer-events="all" class="st4" cx="2220.5" cy="841.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2198.8262 845.5)" class="st9"><tspan x="0" y="0" class="st5 st6 st7">Java</tspan><tspan x="25.3" y="0" class="st5 st10 st7">基础</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st8" d="M2260.5,1021.5c23.3,0,35,5,35,15s9.5,15,28.6,15"/>
+		<path pointer-events="all" class="st3" d="M2329.4,1051.5l-7,3.5l1.8-3.5l-1.8-3.5L2329.4,1051.5z"/>
+		<path pointer-events="stroke" class="st2" d="M2260.5,1021.5c380,0,570-24.5,570-73.6"/>
+		<path pointer-events="all" class="st3" d="M2830.5,942.6l3.5,7l-3.5-1.8l-3.5,1.8L2830.5,942.6z"/>
+		<path pointer-events="stroke" class="st2" d="M2260.5,1021.5c120,0,180-97.9,180-293.6"/>
+		<path pointer-events="all" class="st3" d="M2440.5,722.6l3.5,7l-3.5-1.8l-3.5,1.8L2440.5,722.6z"/>
+		<path pointer-events="stroke" class="st2" d="M2260.5,1021.5c46.7,0,70-130,70-390s21.2-390,63.6-390"/>
+		<path pointer-events="all" class="st3" d="M2399.4,241.5l-7,3.5l1.8-3.5l-1.8-3.5L2399.4,241.5z"/>
+		<ellipse pointer-events="all" class="st4" cx="2220.5" cy="1021.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2194.1592 1025.5)" class="st9"><tspan x="0" y="0" class="st5 st6 st7">C/C++</tspan><tspan x="34.7" y="0" class="st5 st10 st7">基础</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st8" d="M2260.5,931.5c73.3,0,110,24.5,110,73.6"/>
+		<path pointer-events="all" class="st3" d="M2370.5,1010.4l-3.5-7l3.5,1.8l3.5-1.8L2370.5,1010.4z"/>
+		<path pointer-events="stroke" class="st2" d="M2260.5,931.5c197.3,0,296,36.7,296,110s96.5,110,289.6,110"/>
+		<path pointer-events="all" class="st3" d="M2851.4,1151.5l-7,3.5l1.8-3.5l-1.8-3.5L2851.4,1151.5z"/>
+		<ellipse pointer-events="all" class="st4" cx="2220.5" cy="931.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2192.8203 935.5)" class="st9"><tspan x="0" y="0" class="st5 st6 st7">Python</tspan><tspan x="37.4" y="0" class="st5 st10 st7">基础</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M2628.5,1372.5c-5.3,0-8-36.8-8-110.5s75.2-110.5,225.6-110.5"/>
+		<path pointer-events="all" class="st3" d="M2851.4,1151.5l-7,3.5l1.8-3.5l-1.8-3.5L2851.4,1151.5z"/>
+		<ellipse pointer-events="all" class="st11" cx="2628.5" cy="1412.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2592.5 1416.5)" class="st12 st10 st7">机器学习理论基础</text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M2892.5,1191.5c0,0,0,125.5,0,376.6"/>
+		<path pointer-events="all" class="st3" d="M2892.5,1573.4l-3.5-7l3.5,1.8l3.5-1.8L2892.5,1573.4z"/>
+		<ellipse pointer-events="all" class="st4" cx="2892.5" cy="1151.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2866.165 1155.5)" class="st9"><tspan x="0" y="0" class="st5 st10 st7">机器学习</tspan><tspan x="48" y="0" class="st5 st6 st7"> I...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M2540.5,1051.5c126.7,0,190-54.5,190-163.6"/>
+		<path pointer-events="all" class="st3" d="M2730.5,882.6l3.5,7l-3.5-1.8l-3.5,1.8L2730.5,882.6z"/>
+		<path pointer-events="stroke" class="st2" d="M2540.5,1051.5c193.3,0,290-34.5,290-103.6"/>
+		<path pointer-events="all" class="st3" d="M2830.5,942.6l3.5,7l-3.5-1.8l-3.5,1.8L2830.5,942.6z"/>
+		<path pointer-events="stroke" class="st2" d="M2540.5,1051.5c0,0,172.9,0,518.6,0"/>
+		<path pointer-events="all" class="st3" d="M3064.4,1051.5l-7,3.5l1.8-3.5l-1.8-3.5L3064.4,1051.5z"/>
+		<path pointer-events="stroke" class="st2" d="M2540.5,1051.5c547.3,0,821-176.2,821-528.6"/>
+		<path pointer-events="all" class="st3" d="M3361.5,517.6l3.5,7l-3.5-1.8l-3.5,1.8L3361.5,517.6z"/>
+		<ellipse pointer-events="all" class="st4" cx="2500.5" cy="1051.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2436.999 1055.5)" class="st9"><tspan x="0" y="0" class="st5 st10 st7">项目构建拥有编写项目的能力</tspan><tspan x="156" y="0" class="st5 st6 st7">...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M2410.5,1051.5c0,0,14.5,0,43.6,0"/>
+		<path pointer-events="all" class="st3" d="M2459.4,1051.5l-7,3.5l1.8-3.5l-1.8-3.5L2459.4,1051.5z"/>
+		<path pointer-events="stroke" class="st2" d="M2410.5,1051.5c26.7,0,40,42.9,40,128.6"/>
+		<path pointer-events="all" class="st3" d="M2450.5,1185.4l-3.5-7l3.5,1.8l3.5-1.8L2450.5,1185.4z"/>
+		<path pointer-events="stroke" class="st2" d="M2410.5,1051.5c34.7,0,52,16.7,52,50s127.9,50,383.6,50"/>
+		<path pointer-events="all" class="st3" d="M2851.4,1151.5l-7,3.5l1.8-3.5l-1.8-3.5L2851.4,1151.5z"/>
+		<ellipse pointer-events="all" class="st4" cx="2370.5" cy="1051.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2320.499 1055.5)" class="st9"><tspan x="0" y="0" class="st5 st10 st7">程序思想能够解决问题</tspan><tspan x="120" y="0" class="st5 st6 st7">...</tspan></text>
+		</g>
+		<ellipse pointer-events="all" class="st4" cx="2830.5" cy="901.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2822.168 905.5)" class="st5 st6 st7">QT</text>
+		</g>
+		<ellipse pointer-events="all" class="st11" cx="2730.5" cy="841.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2700.8193 845.5)" class="st9"><tspan x="0" y="0" class="st12 st6 st7">Android</tspan><tspan x="41.4" y="0" class="st12 st10 st7">开发</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st8" d="M2260.5,1111.5c23.3,0,35-10,35-30s9.5-30,28.6-30"/>
+		<path pointer-events="all" class="st3" d="M2329.4,1051.5l-7,3.5l1.8-3.5l-1.8-3.5L2329.4,1051.5z"/>
+		<ellipse pointer-events="all" class="st4" cx="2220.5" cy="1111.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2198 1115.5)" class="st5 st10 st7">易语言基础</text>
+		</g>
+		<path pointer-events="stroke" class="st8" d="M2260.5,661.5c73.3,0,110,114.5,110,343.6"/>
+		<path pointer-events="all" class="st3" d="M2370.5,1010.4l-3.5-7l3.5,1.8l3.5-1.8L2370.5,1010.4z"/>
+		<ellipse pointer-events="all" class="st11" cx="2220.5" cy="661.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2196.4912 665.5)" class="st9"><tspan x="0" y="0" class="st12 st6 st7">Kotlin</tspan><tspan x="30" y="0" class="st12 st10 st7">基础</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st8" d="M2260.5,1201.5c73.3,0,110-34.5,110-103.6"/>
+		<path pointer-events="all" class="st3" d="M2370.5,1092.6l3.5,7l-3.5-1.8l-3.5,1.8L2370.5,1092.6z"/>
+		<ellipse pointer-events="all" class="st11" cx="2220.5" cy="1201.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2203.4961 1205.5)" class="st9"><tspan x="0" y="0" class="st12 st6 st7">Go</tspan><tspan x="16" y="0" class="st12 st10 st7">基础</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M1293.5,1191.5c0,0,0,26.2,0,78.6"/>
+		<path pointer-events="all" class="st3" d="M1293.5,1275.4l-3.5-7l3.5,1.8l3.5-1.8L1293.5,1275.4z"/>
+		<path pointer-events="stroke" class="st2" d="M1333.5,1151.5c304.7,0,457,65.2,457,195.5s276.3,195.5,829,195.5s829-25.5,829-76.6
+			"/>
+		<path pointer-events="all" class="st3" d="M3448.5,1460.6l3.5,7l-3.5-1.8l-3.5,1.8L3448.5,1460.6z"/>
+		<ellipse pointer-events="all" class="st4" cx="1293.5" cy="1151.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 1274.498 1155.5)" class="st9"><tspan x="0" y="0" class="st5 st10 st7">数学</tspan><tspan x="24" y="0" class="st5 st6 st7"> II...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M1333.5,1011.5c480,0,720-28.3,720-85s40.2-85,120.6-85"/>
+		<path pointer-events="all" class="st3" d="M2179.4,841.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,841.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1333.5,1011.5c486,0,729-13.3,729-40s37.2-40,111.6-40"/>
+		<path pointer-events="all" class="st3" d="M2179.4,931.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,931.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1333.5,1011.5c282.3,0,423.5,1.7,423.5,5s139,5,417.1,5"/>
+		<path pointer-events="all" class="st3" d="M2179.4,1021.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,1021.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1333.5,1011.5c481.3,0,722,16.7,722,50s39.5,50,118.6,50"/>
+		<path pointer-events="all" class="st3" d="M2179.4,1111.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,1111.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1333.5,1011.5c474.7,0,712,31.7,712,95s42.9,95,128.6,95"/>
+		<path pointer-events="all" class="st3" d="M2179.4,1201.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,1201.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1293.5,1051.5c0,0,0,17.9,0,53.6"/>
+		<path pointer-events="all" class="st3" d="M1293.5,1110.4l-3.5-7l3.5,1.8l3.5-1.8L1293.5,1110.4z"/>
+		<path pointer-events="stroke" class="st2" d="M1333.5,1011.5c470,0,705-43.3,705-130s45.2-130,135.6-130"/>
+		<path pointer-events="all" class="st3" d="M2179.4,751.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,751.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1333.5,1011.5c462,0,693-58.3,693-175s49.2-175,147.6-175"/>
+		<path pointer-events="all" class="st3" d="M2179.4,661.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,661.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1333.5,1011.5c463.3,0,695,46.7,695,140s48.5,140,145.6,140"/>
+		<path pointer-events="all" class="st3" d="M2179.4,1291.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,1291.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1333.5,1011.5c453.3,0,680-73.3,680-220s53.5-220,160.6-220"/>
+		<path pointer-events="all" class="st3" d="M2179.4,571.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,571.5z"/>
+		<ellipse pointer-events="all" class="st4" cx="1293.5" cy="1011.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 1276.165 1015.5)" class="st9"><tspan x="0" y="0" class="st5 st10 st7">数学</tspan><tspan x="24" y="0" class="st5 st6 st7"> I...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M1333.5,1316.5c371.3,0,557,16,557,48s230.5,48,691.6,48"/>
+		<path pointer-events="all" class="st3" d="M2587.4,1412.5l-7,3.5l1.8-3.5l-1.8-3.5L2587.4,1412.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1293.5,1356.5c0,0,0,22.9,0,68.6"/>
+		<path pointer-events="all" class="st3" d="M1293.5,1430.4l-3.5-7l3.5,1.8l3.5-1.8L1293.5,1430.4z"/>
+		<ellipse pointer-events="all" class="st4" cx="1293.5" cy="1316.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 1272.8311 1320.5)" class="st9"><tspan x="0" y="0" class="st5 st10 st7">数学</tspan><tspan x="24" y="0" class="st5 st6 st7"> III...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st8" d="M2260.5,751.5c73.3,0,110,84.5,110,253.6"/>
+		<path pointer-events="all" class="st3" d="M2370.5,1010.4l-3.5-7l3.5,1.8l3.5-1.8L2370.5,1010.4z"/>
+		<path pointer-events="stroke" class="st2" d="M2260.5,751.5c268.3,0,402.5-0.7,402.5-2s132-2,396.1-2"/>
+		<path pointer-events="all" class="st3" d="M3064.4,747.5l-7,3.5l1.8-3.5l-1.8-3.5L3064.4,747.5z"/>
+		<ellipse pointer-events="all" class="st11" cx="2220.5" cy="751.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2203.8301 755.5)" class="st9"><tspan x="0" y="0" class="st12 st6 st7">C#</tspan><tspan x="15.3" y="0" class="st12 st10 st7">基础</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M1322.5,1782.5c0,126.7,161.2,190,483.6,190"/>
+		<path pointer-events="all" class="st3" d="M1811.4,1972.5l-7,3.5l1.8-3.5l-1.8-3.5L1811.4,1972.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1322.5,1782.5c0,60,161.2,90,483.6,90"/>
+		<path pointer-events="all" class="st3" d="M1811.4,1872.5l-7,3.5l1.8-3.5l-1.8-3.5L1811.4,1872.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1322.5,1782.5c0,193.3,161.2,290,483.6,290"/>
+		<path pointer-events="all" class="st3" d="M1811.4,2072.5l-7,3.5l1.8-3.5l-1.8-3.5L1811.4,2072.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1322.5,1782.5c846.7,0,1270,47.9,1270,143.6"/>
+		<path pointer-events="all" class="st3" d="M2592.5,1931.4l-3.5-7l3.5,1.8l3.5-1.8L2592.5,1931.4z"/>
+		<path pointer-events="stroke" class="st2" d="M1322.5,1782.5c0,260,161.2,390,483.6,390"/>
+		<path pointer-events="all" class="st3" d="M1811.4,2172.5l-7,3.5l1.8-3.5l-1.8-3.5L1811.4,2172.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1282.5,1822.5c0,0,0,44.9,0,134.6"/>
+		<path pointer-events="all" class="st3" d="M1282.5,1962.4l-3.5-7l3.5,1.8l3.5-1.8L1282.5,1962.4z"/>
+		<ellipse pointer-events="all" class="st4" cx="1282.5" cy="1782.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 1248.4951 1786.5)" class="st9"><tspan x="0" y="0" class="st5 st6 st7">3D</tspan><tspan x="15.3" y="0" class="st5 st10 st7">模型认识</tspan><tspan x="63.3" y="0" class="st5 st6 st7"> I...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st8" d="M1892.5,1872.5c273.3,0,410,121.2,410,363.6"/>
+		<path pointer-events="all" class="st3" d="M2302.5,2241.4l-3.5-7l3.5,1.8l3.5-1.8L2302.5,2241.4z"/>
+		<path pointer-events="stroke" class="st8" d="M1892.5,1872.5c173.3,0,260,121.2,260,363.6"/>
+		<path pointer-events="all" class="st3" d="M2152.5,2241.4l-3.5-7l3.5,1.8l3.5-1.8L2152.5,2241.4z"/>
+		<ellipse pointer-events="all" class="st11" cx="1852.5" cy="1872.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 1822.8193 1876.5)" class="st9"><tspan x="0" y="0" class="st12 st6 st7">Blender</tspan><tspan x="41.4" y="0" class="st12 st10 st7">基础</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st8" d="M1892.5,1972.5c273.3,0,410,87.9,410,263.6"/>
+		<path pointer-events="all" class="st3" d="M2302.5,2241.4l-3.5-7l3.5,1.8l3.5-1.8L2302.5,2241.4z"/>
+		<path pointer-events="stroke" class="st8" d="M1892.5,1972.5c173.3,0,260,87.9,260,263.6"/>
+		<path pointer-events="all" class="st3" d="M2152.5,2241.4l-3.5-7l3.5,1.8l3.5-1.8L2152.5,2241.4z"/>
+		<ellipse pointer-events="all" class="st4" cx="1852.5" cy="1972.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 1828.8281 1976.5)" class="st9"><tspan x="0" y="0" class="st5 st6 st7">Maya</tspan><tspan x="29.3" y="0" class="st5 st10 st7">基础</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st8" d="M1892.5,2072.5c273.3,0,410,54.5,410,163.6"/>
+		<path pointer-events="all" class="st3" d="M2302.5,2241.4l-3.5-7l3.5,1.8l3.5-1.8L2302.5,2241.4z"/>
+		<path pointer-events="stroke" class="st8" d="M1892.5,2072.5c173.3,0,260,54.5,260,163.6"/>
+		<path pointer-events="all" class="st3" d="M2152.5,2241.4l-3.5-7l3.5,1.8l3.5-1.8L2152.5,2241.4z"/>
+		<ellipse pointer-events="all" class="st11" cx="1852.5" cy="2072.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 1824.4951 2076.5)" class="st9"><tspan x="0" y="0" class="st12 st6 st7">3DMax</tspan><tspan x="38" y="0" class="st12 st10 st7">基础</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M2632.5,1972.5c664,0,996-168.9,996-506.6"/>
+		<path pointer-events="all" class="st3" d="M3628.5,1460.6l3.5,7l-3.5-1.8l-3.5,1.8L3628.5,1460.6z"/>
+		<path pointer-events="stroke" class="st2" d="M2592.5,2012.5c-46.7,0-70,104.5-70,313.6"/>
+		<path pointer-events="all" class="st3" d="M2522.5,2331.4l-3.5-7l3.5,1.8l3.5-1.8L2522.5,2331.4z"/>
+		<path pointer-events="stroke" class="st2" d="M2592.5,2012.5c33.3,0,50,104.5,50,313.6"/>
+		<path pointer-events="all" class="st3" d="M2642.5,2331.4l-3.5-7l3.5,1.8l3.5-1.8L2642.5,2331.4z"/>
+		<ellipse pointer-events="all" class="st4" cx="2592.5" cy="1972.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2556.8281 1976.5)" class="st9"><tspan x="0" y="0" class="st5 st6 st7">3D</tspan><tspan x="15.3" y="0" class="st5 st10 st7">模型认识</tspan><tspan x="63.3" y="0" class="st5 st6 st7"> II...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st8" d="M2260.5,1291.5c73.3,0,110-64.5,110-193.6"/>
+		<path pointer-events="all" class="st3" d="M2370.5,1092.6l3.5,7l-3.5-1.8l-3.5,1.8L2370.5,1092.6z"/>
+		<path pointer-events="stroke" class="st8" d="M2260.5,1291.5c792,0,1188,27.2,1188,81.6"/>
+		<path pointer-events="all" class="st3" d="M3448.5,1378.4l-3.5-7l3.5,1.8l3.5-1.8L3448.5,1378.4z"/>
+		<ellipse pointer-events="all" class="st4" cx="2220.5" cy="1291.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2181.6553 1295.5)" class="st9"><tspan x="0" y="0" class="st5 st6 st7">Godot</tspan><tspan x="32.7" y="0" class="st5 st10 st7">引擎和语言</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st8" d="M3145.5,747.5c202,0,303,208.5,303,625.6"/>
+		<path pointer-events="all" class="st3" d="M3448.5,1378.4l-3.5-7l3.5,1.8l3.5-1.8L3448.5,1378.4z"/>
+		<path pointer-events="stroke" class="st2" d="M3488.5,1419.5c0,0,31.2,0,93.6,0"/>
+		<path pointer-events="all" class="st3" d="M3587.4,1419.5l-7,3.5l1.8-3.5l-1.8-3.5L3587.4,1419.5z"/>
+		<path pointer-events="stroke" class="st8" d="M3488.5,1419.5c80,0,120-67.9,120-203.6"/>
+		<path pointer-events="all" class="st3" d="M3608.5,1210.6l3.5,7l-3.5-1.8l-3.5,1.8L3608.5,1210.6z"/>
+		<ellipse pointer-events="all" class="st4" cx="3448.5" cy="1419.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 3430.5 1423.5)" class="st5 st10 st7">游戏开发</text>
+		</g>
+		<ellipse pointer-events="all" class="st4" cx="3628.5" cy="1419.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 3602.8301 1423.5)" class="st9"><tspan x="0" y="0" class="st5 st6 st7">3D</tspan><tspan x="15.3" y="0" class="st5 st10 st7">游戏开发</tspan></text>
+		</g>
+		<ellipse pointer-events="all" class="st11" cx="3105.5" cy="747.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 3091.8301 751.5)" class="st12 st6 st7">Unity</text>
+		</g>
+		<ellipse pointer-events="all" class="st11" cx="2892.5" cy="1614.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2864.498 1618.5)" class="st9"><tspan x="0" y="0" class="st12 st10 st7">机器学习</tspan><tspan x="48" y="0" class="st12 st6 st7"> II...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M1333.5,1471.5c0,95.3,504.2,143,1512.6,143"/>
+		<path pointer-events="all" class="st3" d="M2851.4,1614.5l-7,3.5l1.8-3.5l-1.8-3.5L2851.4,1614.5z"/>
+		<ellipse pointer-events="all" class="st11" cx="1293.5" cy="1471.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 1272.7139 1475.5)" class="st9"><tspan x="0" y="0" class="st12 st10 st7">数学</tspan><tspan x="24" y="0" class="st12 st6 st7"> IV...</tspan></text>
+		</g>
+		<ellipse pointer-events="all" class="st4" cx="1282.5" cy="2003.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 1265.8301 2007.5)" class="st9"><tspan x="0" y="0" class="st5 st6 st7">3D</tspan><tspan x="15.3" y="0" class="st5 st10 st7">打印</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M2480.5,681.5c70,0,105-3.3,105-10s32.9-10,98.6-10"/>
+		<path pointer-events="all" class="st3" d="M2689.4,661.5l-7,3.5l1.8-3.5l-1.8-3.5L2689.4,661.5z"/>
+		<path pointer-events="stroke" class="st2" d="M2440.5,641.5V467.9"/>
+		<path pointer-events="all" class="st3" d="M2440.5,462.6l3.5,7l-3.5-1.8l-3.5,1.8L2440.5,462.6z"/>
+		<ellipse pointer-events="all" class="st4" cx="2440.5" cy="681.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2409.665 685.5)" class="st9"><tspan x="0" y="0" class="st5 st10 st7">嵌入式开发</tspan><tspan x="60" y="0" class="st5 st6 st7"> I...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M2260.5,571.5c734,0,1101-16.2,1101-48.6"/>
+		<path pointer-events="all" class="st3" d="M3361.5,517.6l3.5,7l-3.5-1.8l-3.5,1.8L3361.5,517.6z"/>
+		<path pointer-events="stroke" class="st8" d="M2260.5,571.5c73.3,0,110,144.5,110,433.6"/>
+		<path pointer-events="all" class="st3" d="M2370.5,1010.4l-3.5-7l3.5,1.8l3.5-1.8L2370.5,1010.4z"/>
+		<ellipse pointer-events="all" class="st4" cx="2220.5" cy="571.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2192.4893 575.5)" class="st5 st6 st7">JavaScript</text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M2120.5,486.5c400.3,0,600.5-1.7,600.5-5s198-5,594.1-5"/>
+		<path pointer-events="all" class="st3" d="M3320.4,476.5l-7,3.5l1.8-3.5l-1.8-3.5L3320.4,476.5z"/>
+		<ellipse pointer-events="all" class="st4" cx="2080.5" cy="486.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2046.6621 490.5)" class="st9"><tspan x="0" y="0" class="st5 st6 st7">Html5</tspan><tspan x="31.3" y="0" class="st5 st10 st7">和</tspan><tspan x="43.3" y="0" class="st5 st6 st7">Css3</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M3401.5,476.5c33,0,49.5,0.8,49.5,2.5s14.4,2.5,43.1,2.5"/>
+		<path pointer-events="all" class="st3" d="M3499.4,481.5l-7,3.5l1.8-3.5l-1.8-3.5L3499.4,481.5z"/>
+		<ellipse pointer-events="all" class="st4" cx="3361.5" cy="476.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 3340.2715 480.5)" class="st9"><tspan x="0" y="0" class="st5 st6 st7">Web</tspan><tspan x="24.7" y="0" class="st5 st10 st7">开发</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M2450.5,1266.5c0,0,0,12.9,0,38.6"/>
+		<path pointer-events="all" class="st3" d="M2450.5,1310.4l-3.5-7l3.5,1.8l3.5-1.8L2450.5,1310.4z"/>
+		<ellipse pointer-events="all" class="st4" cx="2450.5" cy="1226.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2433.165 1230.5)" class="st9"><tspan x="0" y="0" class="st5 st10 st7">算法</tspan><tspan x="24" y="0" class="st5 st6 st7"> I...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M2450.5,1391.5c0,0,0,12.9,0,38.6"/>
+		<path pointer-events="all" class="st3" d="M2450.5,1435.4l-3.5-7l3.5,1.8l3.5-1.8L2450.5,1435.4z"/>
+		<ellipse pointer-events="all" class="st4" cx="2450.5" cy="1351.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2431.498 1355.5)" class="st9"><tspan x="0" y="0" class="st5 st10 st7">算法</tspan><tspan x="24" y="0" class="st5 st6 st7"> II...</tspan></text>
+		</g>
+		<ellipse pointer-events="all" class="st11" cx="2450.5" cy="1476.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2429.8311 1480.5)" class="st9"><tspan x="0" y="0" class="st12 st10 st7">算法</tspan><tspan x="24" y="0" class="st12 st6 st7"> III...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M2342.5,2282.5c200,0,300,14.5,300,43.6"/>
+		<path pointer-events="all" class="st3" d="M2642.5,2331.4l-3.5-7l3.5,1.8l3.5-1.8L2642.5,2331.4z"/>
+		<path pointer-events="stroke" class="st2" d="M2342.5,2282.5c120,0,180,14.5,180,43.6"/>
+		<path pointer-events="all" class="st3" d="M2522.5,2331.4l-3.5-7l3.5,1.8l3.5-1.8L2522.5,2331.4z"/>
+		<ellipse pointer-events="all" class="st4" cx="2302.5" cy="2282.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2277.4951 2286.5)" class="st9"><tspan x="0" y="0" class="st5 st6 st7">3D</tspan><tspan x="15.3" y="0" class="st5 st10 st7">建模</tspan><tspan x="39.3" y="0" class="st5 st6 st7"> I...</tspan></text>
+		</g>
+		<ellipse pointer-events="all" class="st11" cx="2642.5" cy="2372.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2624.5 2376.5)" class="st12 st10 st7">角色建模</text>
+		</g>
+		<ellipse pointer-events="all" class="st11" cx="2522.5" cy="2372.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2504.5 2376.5)" class="st12 st10 st7">场景建模</text>
+		</g>
+		<ellipse pointer-events="all" class="st11" cx="2152.5" cy="2282.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2135.165 2286.5)" class="st9"><tspan x="0" y="0" class="st12 st10 st7">渲染</tspan><tspan x="24" y="0" class="st12 st6 st7"> I...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st8" d="M1892.5,2172.5c273.3,0,410,21.2,410,63.6"/>
+		<path pointer-events="all" class="st3" d="M2302.5,2241.4l-3.5-7l3.5,1.8l3.5-1.8L2302.5,2241.4z"/>
+		<path pointer-events="stroke" class="st8" d="M1892.5,2172.5c173.3,0,260,21.2,260,63.6"/>
+		<path pointer-events="all" class="st3" d="M2152.5,2241.4l-3.5-7l3.5,1.8l3.5-1.8L2152.5,2241.4z"/>
+		<ellipse pointer-events="all" class="st11" cx="1852.5" cy="2172.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 1824.8262 2176.5)" class="st9"><tspan x="0" y="0" class="st12 st6 st7">Zbrush</tspan><tspan x="37.3" y="0" class="st12 st10 st7">基础</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M1790.5,871.5c23.3,0,35-64.2,35-192.5s69.5-192.5,208.6-192.5"/>
+		<path pointer-events="all" class="st3" d="M2039.4,486.5l-7,3.5l1.8-3.5l-1.8-3.5L2039.4,486.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1790.5,871.5c39.3,0,59-50,59-150s108.2-150,324.6-150"/>
+		<path pointer-events="all" class="st3" d="M2179.4,571.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,571.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1790.5,871.5c52.7,0,79-35,79-105s101.5-105,304.6-105"/>
+		<path pointer-events="all" class="st3" d="M2179.4,661.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,661.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1790.5,871.5c67.3,0,101-20,101-60s94.2-60,282.6-60"/>
+		<path pointer-events="all" class="st3" d="M2179.4,751.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,751.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1790.5,871.5c76,0,114-5,114-15s89.9-15,269.6-15"/>
+		<path pointer-events="all" class="st3" d="M2179.4,841.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,841.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1790.5,871.5c72,0,108,10,108,30s91.9,30,275.6,30"/>
+		<path pointer-events="all" class="st3" d="M2179.4,931.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,931.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1790.5,871.5c48,0,72,25,72,75s103.9,75,311.6,75"/>
+		<path pointer-events="all" class="st3" d="M2179.4,1021.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,1021.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1790.5,871.5c42.7,0,64,40,64,120s106.5,120,319.6,120"/>
+		<path pointer-events="all" class="st3" d="M2179.4,1111.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,1111.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1790.5,871.5c31.3,0,47,55,47,165s112.2,165,336.6,165"/>
+		<path pointer-events="all" class="st3" d="M2179.4,1201.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,1201.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1790.5,871.5c23.3,0,35,70,35,210s116.2,210,348.6,210"/>
+		<path pointer-events="all" class="st3" d="M2179.4,1291.5l-7,3.5l1.8-3.5l-1.8-3.5L2179.4,1291.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1710.5,871.5c-530.7,0-796,153-796,459s107.4,459,322.3,459"/>
+		<path pointer-events="all" class="st3" d="M1242,1789.5l-7,3.5l1.8-3.5l-1.8-3.5L1242,1789.5z"/>
+		<path pointer-events="stroke" class="st2" d="M1790.5,871.5c13.3,0,20-96.7,20-290s74.5-290,223.6-290"/>
+		<path pointer-events="all" class="st3" d="M2039.4,291.5l-7,3.5l1.8-3.5l-1.8-3.5L2039.4,291.5z"/>
+		<ellipse pointer-events="all" class="st4" cx="1750.5" cy="871.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 1655.499 875.5)" class="st9"><tspan x="0" y="0" class="st5 st10 st7">计算机基本能够管理文件安装软件等基本操作</tspan><tspan x="240" y="0" class="st5 st6 st7">...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M931.5,68.9"/>
+		<path pointer-events="all" class="st3" d="M931.5,63.6l3.5,7l-3.5-1.8l-3.5,1.8L931.5,63.6z"/>
+		<path pointer-events="all" class="st11" d="M3557.5,1149.5h102c5,0,9,4,9,9v42c0,5-4,9-9,9h-102c-5,0-9-4-9-9v-42
+			C3548.5,1153.5,3552.5,1149.5,3557.5,1149.5z"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 3581.5 1183.5)" class="st12 st10 st7">发布一个游戏</text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M270.5,991.5c0,0-14.5,0-43.6,0"/>
+		<path pointer-events="all" class="st3" d="M221.6,991.5l7-3.5l-1.8,3.5l1.8,3.5L221.6,991.5z"/>
+		<ellipse pointer-events="all" class="st4" cx="310.5" cy="991.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 288.665 995.5)" class="st9"><tspan x="0" y="0" class="st5 st10 st7">日本语</tspan><tspan x="36" y="0" class="st5 st6 st7"> I...</tspan></text>
+		</g>
+		<path pointer-events="stroke" class="st2" d="M140.5,991.5c0,0-17.9,0-53.6,0"/>
+		<path pointer-events="all" class="st3" d="M81.6,991.5l7-3.5l-1.8,3.5l1.8,3.5L81.6,991.5z"/>
+		<path pointer-events="stroke" class="st2" d="M180.5,951.5"/>
+		<ellipse pointer-events="all" class="st11" cx="180.5" cy="991.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 156.998 995.5)" class="st9"><tspan x="0" y="0" class="st12 st10 st7">日本语</tspan><tspan x="36" y="0" class="st12 st6 st7"> II...</tspan></text>
+		</g>
+		<ellipse pointer-events="all" class="st11" cx="40.5" cy="991.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 15.3311 995.5)" class="st9"><tspan x="0" y="0" class="st12 st10 st7">日本语</tspan><tspan x="36" y="0" class="st12 st6 st7"> III...</tspan></text>
+		</g>
+		<path pointer-events="all" class="st2" d="M50.5,2085.5v-23h410v23"/>
+		<path pointer-events="none" class="st2" d="M50.5,2085.5v416h410v-416"/>
+		<path pointer-events="none" class="st2" d="M50.5,2085.5h410"/>
+		<g pointer-events="none">
+			<text transform="matrix(1 0 0 1 246 2078.5)" class="st5 st10 st7">图例</text>
+		</g>
+		<ellipse pointer-events="none" class="st11" cx="80.5" cy="2112.5" rx="10" ry="10"/>
+		<path pointer-events="none" class="st11" d="M73.5,2142.5h14c1.7,0,3,1.3,3,3v14c0,1.7-1.3,3-3,3h-14c-1.7,0-3-1.3-3-3v-14
+			C70.5,2143.8,71.8,2142.5,73.5,2142.5z"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 131.5 2116.5)" class="st12 st10 st7">圆框</text>
+		</g>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 131.5 2156.5)" class="st12 st10 st7">方框</text>
+		</g>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 122.5 2235.5)" class="st12 st10 st7">实线箭头</text>
+		</g>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 122.5 2275.5)" class="st12 st10 st7">虚线箭头</text>
+		</g>
+		<path pointer-events="none" class="st8" d="M70.5,2281.5c0-6.7,3.3-8.3,10-5s10,0.5,10-8.6"/>
+		<path pointer-events="none" class="st3" d="M90.5,2262.6l3.5,7l-3.5-1.8l-3.5,1.8L90.5,2262.6z"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 311.5 2116.5)" class="st12 st10 st7">能力</text>
+		</g>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 307 2156.5)" class="st12 st10 st7">小心愿</text>
+		</g>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 257.5 2235.5)" class="st12 st10 st7">必要前提（所有实现全部完成）</text>
+		</g>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 248.5 2275.5)" class="st12 st10 st7">存在前提（存在一个虚线已经完成）</text>
+		</g>
+		<path pointer-events="none" class="st2" d="M70.5,2241.5c0-6.7,3.3-8.3,10-5s10,0.5,10-8.6"/>
+		<path pointer-events="none" class="st3" d="M90.5,2222.6l3.5,7l-3.5-1.8l-3.5,1.8L90.5,2222.6z"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 131.5 2355.5)" class="st12 st10 st7">灰色</text>
+		</g>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 307 2355.5)" class="st12 st10 st7">未完成</text>
+		</g>
+		<path pointer-events="none" class="st13" d="M69.6,2340.1l23.5,2.5l-1.4,20.1l-22.6-1.5"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 307 2395.5)" class="st12 st10 st7">已完成</text>
+		</g>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 131.5 2395.5)" class="st12 st10 st7">绿色</text>
+		</g>
+		<path pointer-events="none" class="st14" d="M70.4,2381.6L70.4,2381.6 M70.4,2381.6L70.4,2381.6 M70.8,2387.2c2.2-1.3,3.1-4,5.3-6
+			 M70.8,2387.2c1.5-1.6,3.3-3.9,5.3-6 M70.6,2393.6c2.8-2.6,5.3-4.3,10.5-12.1 M70.6,2393.6c3.4-4.6,7.5-9.4,10.5-12.1 M70.3,2400
+			c4.8-5.8,12.4-14.4,16.4-18.9 M70.3,2400c4-4.7,7.6-9.2,16.4-18.9 M72,2404.2c9.2-10,14.4-15.2,19.7-22.6 M72,2404.2
+			c5.2-5,9.7-12.7,19.7-22.6 M77.6,2403.8c2.3-3.8,7.5-6.4,13.8-15.9 M77.6,2403.8c4.3-4.8,7.3-7.8,13.8-15.9 M82.6,2404.1
+			c4.2-1.8,4.6-5.5,9.2-10.6 M82.6,2404.1c3.4-3.9,6.8-8.1,9.2-10.6 M88.3,2403.7c1.3-1.2,1.7-2.4,3.3-3.8 M88.3,2403.7
+			c1.1-1.1,2-2.8,3.3-3.8"/>
+		<path pointer-events="none" class="st15" d="M70.6,2421.4L70.6,2421.4 M70.6,2421.4L70.6,2421.4 M70.3,2427.8
+			c1.7-2.6,3.5-4.8,5.3-6 M70.3,2427.8c1-1.3,3-3.2,5.3-6 M70.7,2433.5c3.5-3.3,7.9-6.9,10.5-12.1 M70.7,2433.5
+			c4.3-4.7,7.4-9.9,10.5-12.1 M70.4,2439.9c4.3-8.4,13.8-13.5,15.7-18.1 M70.4,2439.9c6.1-7.2,11.9-13.4,15.7-18.1 M72.1,2444
+			c5.9-5.3,9.2-8.4,19.7-22.6 M72.1,2444c8.1-9,14.5-17.5,19.7-22.6 M77.8,2443.6c5.7-4.2,8.8-10.1,13.8-15.8 M77.8,2443.6
+			c2.7-3.3,7.2-9.3,13.8-15.8 M82.8,2444c2.9-3.3,5.7-5.7,9.2-10.6 M82.8,2444c2.8-4.6,7.6-8.1,9.2-10.6 M88.4,2443.6
+			c1.1-1.4,2.1-2.1,3.3-3.8 M88.4,2443.6c1.2-1.4,2.2-2.4,3.3-3.8"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 131.5 2435.5)" class="st12 st10 st7">黄色</text>
+		</g>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 275.5 2435.5)" class="st12 st10 st7">需要进一步确定和进行</text>
+		</g>
+		<ellipse pointer-events="none" class="st11" cx="3105.5" cy="1051.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 3087.5 1055.5)" class="st12 st10 st7">多人协作</text>
+		</g>
+		<path pointer-events="none" class="st2" d="M2540.5,1051.5c0,0,175,0,525,0"/>
+		<path pointer-events="none" class="st2" d="M970.5,493.5c0,0,0-20.2,0-60.6"/>
+		<path pointer-events="none" class="st3" d="M970.5,427.6l3.5,7l-3.5-1.8l-3.5,1.8L970.5,427.6z"/>
+		<ellipse pointer-events="none" class="st11" cx="970.5" cy="533.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 952.5 537.5)" class="st12 st10 st7">基本乐理</text>
+		</g>
+		<path pointer-events="none" class="st2" d="M970.5,346.5c0,0,0-16.5,0-49.6"/>
+		<path pointer-events="none" class="st3" d="M970.5,291.6l3.5,7l-3.5-1.8l-3.5,1.8L970.5,291.6z"/>
+		<ellipse pointer-events="none" class="st11" cx="970.5" cy="386.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 953.165 390.5)" class="st9"><tspan x="0" y="0" class="st12 st10 st7">编曲</tspan><tspan x="24" y="0" class="st12 st6 st7"> I...</tspan></text>
+		</g>
+		<path pointer-events="none" class="st11" d="M880.5,2.5h102c5,0,9,4,9,9v42c0,5-4,9-9,9h-102c-5,0-9-4-9-9v-42
+			C871.5,6.5,875.5,2.5,880.5,2.5z"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 913.5 36.5)" class="st12 st10 st7">原创歌曲</text>
+		</g>
+		<path pointer-events="none" class="st2" d="M970.5,210.5c0-49.3-6.5-74-19.5-74s-19.5-22.5-19.5-67.6"/>
+		<path pointer-events="none" class="st3" d="M931.5,63.6l3.5,7l-3.5-1.8l-3.5,1.8L931.5,63.6z"/>
+		<ellipse pointer-events="none" class="st11" cx="970.5" cy="250.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 951.498 254.5)" class="st9"><tspan x="0" y="0" class="st12 st10 st7">编曲</tspan><tspan x="24" y="0" class="st12 st6 st7"> II...</tspan></text>
+		</g>
+		<path pointer-events="none" class="st2" d="M500.5,1251.5c0,13.3,0,19.5,0,18.5s0,3,0,12.1"/>
+		<path pointer-events="none" class="st3" d="M500.5,1287.4l-3.5-7l3.5,1.8l3.5-1.8L500.5,1287.4z"/>
+		<ellipse pointer-events="none" class="st11" cx="500.5" cy="1211.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 470.1631 1215.5)" class="st9"><tspan x="0" y="0" class="st12 st6 st7">ACG</tspan><tspan x="26" y="0" class="st12 st10 st7">绘画</tspan><tspan x="50" y="0" class="st12 st6 st7"> I...</tspan></text>
+		</g>
+		<ellipse pointer-events="none" class="st11" cx="500.5" cy="1328.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 468.4961 1332.5)" class="st9"><tspan x="0" y="0" class="st12 st6 st7">ACG</tspan><tspan x="26" y="0" class="st12 st10 st7">绘画</tspan><tspan x="50" y="0" class="st12 st6 st7"> II...</tspan></text>
+		</g>
+		<path pointer-events="none" class="st16" d="M3500.5,411.5L3500.5,411.5h120l0,0"/>
+		<path pointer-events="none" class="st2" d="M3500.5,411.5v140h120v-140"/>
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1178" height="737" xlink:href="4D49EB39.png"  pointer-events="none" transform="matrix(0.1019 0 0 0.1018 3500 471)">
+		</image>
+		<rect x="3500.5" y="411.5" pointer-events="none" class="st4" width="120" height="60"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 3542.5 445.5)" class="st5 st10 st7">建立博客</text>
+		</g>
+		<path pointer-events="none" class="st16" d="M2690.5,586.5L2690.5,586.5h120l0,0"/>
+		<path pointer-events="none" class="st2" d="M2690.5,586.5v150h120v-150"/>
+		<rect x="2690.5" y="586.5" pointer-events="none" class="st4" width="120" height="60"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2720.3301 620.5)" class="st9"><tspan x="0" y="0" class="st5 st10 st7">制造</tspan><tspan x="24" y="0" class="st5 st6 st7">3D</tspan><tspan x="39.3" y="0" class="st5 st10 st7">打印机</tspan></text>
+		</g>
+		
+			<image style="overflow:visible;enable-background:new    ;" width="600" height="451" xlink:href="4D49EB3B.png"  pointer-events="none" transform="matrix(0.2 0 0 0.2001 2690 646)">
+		</image>
+		<path pointer-events="none" class="st2" d="M2480.5,421.5c118.7,0,178-64.5,178-193.6"/>
+		<path pointer-events="none" class="st3" d="M2658.5,222.6l3.5,7l-3.5-1.8l-3.5,1.8L2658.5,222.6z"/>
+		<ellipse pointer-events="none" class="st11" cx="2440.5" cy="421.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2407.998 425.5)" class="st9"><tspan x="0" y="0" class="st12 st10 st7">嵌入式开发</tspan><tspan x="60" y="0" class="st12 st6 st7"> II...</tspan></text>
+		</g>
+		<path pointer-events="none" class="st2" d="M2120.5,291.5c93.3,0,140-8.3,140-25s44.5-25,133.6-25"/>
+		<path pointer-events="none" class="st3" d="M2399.4,241.5l-7,3.5l1.8-3.5l-1.8-3.5L2399.4,241.5z"/>
+		<ellipse pointer-events="none" class="st4" cx="2080.5" cy="291.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2057.8213 295.5)" class="st5 st6 st7">Linux I...</text>
+		</g>
+		<ellipse pointer-events="none" class="st11" cx="2658.5" cy="181.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2624.3311 185.5)" class="st9"><tspan x="0" y="0" class="st12 st10 st7">嵌入式开发</tspan><tspan x="60" y="0" class="st12 st6 st7"> III...</tspan></text>
+		</g>
+		<path pointer-events="none" class="st2" d="M2480.5,241.5c46,0,69-10,69-30s20.9-30,62.6-30"/>
+		<path pointer-events="none" class="st3" d="M2617.4,181.5l-7,3.5l1.8-3.5l-1.8-3.5L2617.4,181.5z"/>
+		<ellipse pointer-events="none" class="st11" cx="2440.5" cy="241.5" rx="40" ry="40"/>
+		<g transform="translate(-0.5 -0.5)">
+			<text transform="matrix(1 0 0 1 2416.1543 245.5)" class="st12 st6 st7">Linux II...</text>
+		</g>
+	</g>
+	<a xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems"  transform="translate(0,-5)">
+		<text transform="matrix(1 0 0 1 1764.1333 2502.5)" class="st6 st17">Text is not SVG - cannot display</text>
+	</a>
+	<path class="st1" d="z"/>
+</g>
+</svg>
