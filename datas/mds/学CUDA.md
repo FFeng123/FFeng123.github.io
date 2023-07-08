@@ -220,8 +220,7 @@ int main()
         return 1;
     }
 
-    printf("{1,2,3,4,5} + {10,20,30,40,50} = {%d,%d,%d,%d,%d}\n",
-        c[0], c[1], c[2], c[3], c[4]);
+    printf(···);
 
     // 翻译：cudaDeviceReset必须在退出之前调用，以便分析和跟踪工具(如Nsight和Visual Profiler)显示完整的跟踪。
     // cudaDeviceReset must be called before exiting in order for profiling and
