@@ -1,5 +1,5 @@
 {
-    "articleAmount": 64,
+    "articleAmount": 65,
     "pointerFile": "/datas/articles/{index}.json",
     "pageMaxView": 5,
     "pageLength": 5,
@@ -13,7 +13,7 @@
     "imgFriend": "images/bg/1.png",
     "imgTools": "images/bg/1.png",
     "imgNetdev": "images/bg/7.png",
-    "netdev": "http://ffeng123.msns.cn:801",
+    "netdev": "http://box.ffeng123.win:801",
     "tags": {
         "介绍": "#fa5d19",
         "开发": "#12aa9c",
