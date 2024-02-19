@@ -1,155 +1,169 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>这里是峰峰的小窝</title>
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
-        <link rel="icon" href="/favicon.ico" id="linkIcon">
-        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover">
-    </head>
-    <body>
-        <!--加载遮挡-->
-        <div id="loadMask" style="position: fixed;  background-color: #fff; z-index: 65535;  display: flex; font-size: 3em; align-items: center;justify-content: center;left: 0;right: 0;bottom: 0;top: 0;">
-            <img src="/images/loading.svg">
-            <div style="position: absolute;right:0.2em;bottom: 0.2em;" id="maskTxt">加载中···</div>
-        </div>
 
-        </div>
-        <!--导航栏-->
-        <div class="navline" id="navline">
-            <ui class='nav'>
-                <a onclick="setWebPage('P-home')" id="NP-home"><li><img src="/images/main.svg" class="icon dontimgs"> 主页</li></a>
-                <!--前面的区域以后再来探索吧-->
-                <!--<a href="#" id="NP-photo"><li><img src="/images/photo.svg" class="icon dontimgs"> 相册</li></a>！！！！！！！！！！！前面的区域以后再来探索吧！-->
-                <!--前面的区域以后再来探索吧-->
-                <!--<a onclick="setWebPage('P-friend')" id="NP-friend"><li><img src="/images/connect.svg" class="icon dontimgs"> 友链</li></a>-->
-                <a onclick="setWebPage('P-tools')" id="NP-tools"><li><img src="/images/tools.svg" class="icon dontimgs"> 工具</li></a>
-                <a onclick="setWebPage('P-netdev')" id="NP-netdev" style="display: none;"><li><img src="/images/netdev.svg" class="icon dontimgs"> 网盘</li></a>
-                
-            </ui>
-            <img class="icon" id="loadingMS" src="/images/loading.svg" style="transition-duration: 50ms;position: fixed;right: 1em;height: 1.5em;pointer-events: none;">
-        </div>
-        <!--展示图-->
-        <div class="topimage">
-            <div class="BGimage" id="topimage"></div>
-        </div>
-        <!-- 主页 -->
-        <main id="P-home" style="display: none;">
-            <div class="topbox" id="indextopbox">
-                <p class="bigTitle">峰峰的小窝</p>
-                <p class="bigTitle2" id="me-namelast"></p>
-                <div style="height: 20%;"></div>
-                <!--按钮-->
-                <div class="homeBtnBox mustVis">
-                    <img class="icon dontimgs" src="/images/sakura.svg" onclick="setSakuraState()">
-                    <img class="icon dontimgs" src="/images/video.svg" onclick="onPlaystopBtn()">
-                    <img class="icon dontimgs" src="/images/sound.svg" id="soundBtn" onclick="onSoundBtn()">
-                    <img class="icon dontimgs" src="/images/next.svg" id="nextBtn" onclick="startVideoPlay(true)">
-                </div>
-                <!--关于我-->
-                <div class="block" id="mebox">
-                    <div class="line">
-                        <img class="headimage dontimgs" id="me-head" src="">
-                        <div class="row" style="padding: 0.5em;flex-grow: 1;">
-                            <p style="font-size: 2em" id="me-name"></p>
-                        </div>
-                    </div>
-                    <div id="me-mess"></div>
-                </div>
-                <!--水波效果-->
-                <div class="waterdiv mustVis">
-                    <div style="z-index: 5;left:0px;opacity: 100%;top: 0;"></div>
-                    <div style="z-index: 4;left:-100px;opacity: 60%;top: -20px;"></div>
-                </div>
-                <!--背景视频-->
-                <video id="bgvideo" class="mustVis" preload="auto" style="opacity: 0;"></video>
+<head>
+    <meta charset="utf-8">
+    <title>这里是峰峰的小窝</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="icon" href="/favicon.ico" id="linkIcon">
+    <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover">
+</head>
 
-            </div>  
-            <!--主要内容-->
-            <div class="main" style="background-color: #fff;min-height: calc(100vh - 28px - 16.5em);">
-                <div class="block" style="text-align: center;" id="main">
-                    <h1><img src="/images/books.svg" class="icon"> わたしの物語</h1>
-                    <div class="abstorigtop">
-                        <a class="button" onclick='reloadPage()'><img src="/images/reload.svg" class="icon dontimgs"></a>
-                    </div>
-                    <!--文章列表-->
-                    <div id = "list" class="list"><h2 style="text-align: center;"></h2></div>
-                    <!--翻页按钮-->
-                    <div class="pageButtons" id="pages"></div>
-                </div>
+<body>
+    <!--加载遮挡-->
+    <div id="loadMask"
+        style="position: fixed;  background-color: #fff; z-index: 65535;  display: flex; font-size: 3em; align-items: center;justify-content: center;left: 0;right: 0;bottom: 0;top: 0;">
+        <img src="/images/loading.svg">
+        <div style="position: absolute;right:0.2em;bottom: 0.2em;" id="maskTxt">加载中···</div>
+    </div>
+
+    </div>
+    <!--导航栏-->
+    <div class="navline" id="navline">
+        <ui class='nav'>
+            <a onclick="setWebPage('P-home')" id="NP-home">
+                <li><img src="/images/main.svg" class="icon dontimgs"> 主页</li>
+            </a>
+            <!--前面的区域以后再来探索吧-->
+            <!--<a href="#" id="NP-photo"><li><img src="/images/photo.svg" class="icon dontimgs"> 相册</li></a>！！！！！！！！！！！前面的区域以后再来探索吧！-->
+            <!--前面的区域以后再来探索吧-->
+            <!--<a onclick="setWebPage('P-friend')" id="NP-friend"><li><img src="/images/connect.svg" class="icon dontimgs"> 友链</li></a>-->
+            <a onclick="setWebPage('P-tools')" id="NP-tools">
+                <li><img src="/images/tools.svg" class="icon dontimgs"> 工具</li>
+            </a>
+            <a onclick="setWebPage('P-netdev')" id="NP-netdev" style="display: none;">
+                <li><img src="/images/netdev.svg" class="icon dontimgs"> 网盘</li>
+            </a>
+
+        </ui>
+        <img class="icon" id="loadingMS" src="/images/loading.svg"
+            style="transition-duration: 50ms;position: fixed;right: 1em;height: 1.5em;pointer-events: none;">
+    </div>
+    <!--展示图-->
+    <div class="topimage">
+        <div class="BGimage" id="topimage"></div>
+    </div>
+    <!-- 主页 -->
+    <main id="P-home" style="display: none;">
+        <div class="topbox" id="indextopbox">
+            <p class="bigTitle">峰峰的小窝</p>
+            <p class="bigTitle2" id="me-namelast"></p>
+            <div style="height: 20%;"></div>
+            <!--按钮-->
+            <div class="homeBtnBox mustVis">
+                <img class="icon dontimgs" src="/images/sakura.svg" onclick="setSakuraState()">
+                <img class="icon dontimgs" src="/images/video.svg" onclick="onPlaystopBtn()">
+                <img class="icon dontimgs" src="/images/sound.svg" id="soundBtn" onclick="onSoundBtn()">
+                <img class="icon dontimgs" src="/images/next.svg" id="nextBtn" onclick="startVideoPlay(true)">
             </div>
-            <!--底部花边-->
-            <div class="downpage" style="height: 28px;"></div>
-        </main>
-        <!-- 文章页 -->
-        <main id="P-article" style="display: none;">
-            <div class="topbox">
-                <p class="bigTitle" id="A-title"></p>
-                <p class="bigTitle bigTitle-2" id="A-time"></p>
-                <div class="abstorigtop" style="top: 4em;right: 10%;" id="A-mark"></div>
-            </div>
-            <div class="main">
-                <div class="block" id="A-main">
-                    <div id="A-box" class="md"></div>
-                    <!--指向的文章列表-->
-                    <div id="Alistee">
-                        <h1 style="text-align: center;"><img src="/images/books.svg" class="icon"> </h1>
-                        <div id = "A-list" class="list"></div>
+            <!--关于我-->
+            <div class="block" id="mebox">
+                <div class="line">
+                    <img class="headimage dontimgs" id="me-head" src="">
+                    <div class="row" style="padding: 0.5em;flex-grow: 1;">
+                        <p style="font-size: 2em" id="me-name"></p>
                     </div>
                 </div>
-                <div class="block" id="A-saysBox">
-                    <div id="A-says" style="min-height: 3em;"></div>
+                <div id="me-mess"></div>
+            </div>
+            <!--水波效果-->
+            <div class="waterdiv mustVis">
+                <div style="z-index: 5;left:0px;opacity: 100%;top: 0;"></div>
+                <div style="z-index: 4;left:-100px;opacity: 60%;top: -20px;"></div>
+            </div>
+            <!--背景视频-->
+            <video id="bgvideo" class="mustVis" preload="auto" style="opacity: 0;"></video>
 
+        </div>
+        <!--主要内容-->
+        <div class="main" style="background-color: #fff;min-height: calc(100vh - 28px - 16.5em);">
+            <div class="block" style="text-align: center;" id="main">
+                <h1><img src="/images/books.svg" class="icon"> わたしの物語</h1>
+                <div class="abstorigtop">
+                    <a class="button" onclick='reloadPage()'><img src="/images/reload.svg" class="icon dontimgs"></a>
                 </div>
-            </div>
-        </main>
-        <!--友链页-->
-        <main id="P-friend" style="display: none;">
-            <div class="topbox">
-                <p class="bigTitle">友链</p>
-                <p class="bigTitle" style="font-size: 1.5em" id="F-amount"></p>
-                <div class="abstorigtop" style="top: 1em;right: 20%;" id="A-mark"></div>
-            </div>
-            <div class="main">
-                <div class="block" id="F-main">
+                <!--文章列表-->
+                <div id="list" class="list">
                     <h2 style="text-align: center;"></h2>
                 </div>
+                <!--翻页按钮-->
+                <div class="pageButtons" id="pages"></div>
             </div>
-        </main>
-        <!--工具页-->
-        <main id="P-tools" style="display: none;">
-            <div class="topbox">
-                <p class="bigTitle">小工具</p>
-                <p class="bigTitle" style="font-size: 1.5em"></p>
-            </div>
-            <div class="main">
-                <div class="block tools" id="toolsList"></div>
-            </div>
-        </main>
-        <!--网盘页-->
-        <main id="P-netdev" style="display: none;">
-            <div class="topbox">
-                <p class="bigTitle">网盘</p>
-                <p class="bigTitle" style="font-size: 1.5em"></p>
-            </div>
-            <div class="main">
-                <iframe src="" frameborder="0" id="netdeviframe" class="block"></iframe>
-            </div>
-        </main>
-        <!--页脚-->
-        <div class="bottomBar">
-            <p>峰峰的博客</p>
-            <p>祝开心 o(￣▽￣)ｄ</p>
         </div>
-        <!--图片放大-->
-        <div id="imgs-box">
-            <img id="imgs-img">
-        </div>          
-        <script src="/js/marked.min.js"></script>
-        <script src="/js/highlight.min.js"></script>
-        <script src="/js/gitalk.min.js"></script>
-        <script src="/js/sakura.js"></script>
-        <script src="/js/bgvideo.js"></script>
-        <script src="/js/interface.js"></script>
-    </body>
+        <!--底部花边-->
+        <div class="downpage" style="height: 28px;"></div>
+    </main>
+    <!-- 文章页 -->
+    <main id="P-article" style="display: none;">
+        <div class="topbox">
+            <p class="bigTitle" id="A-title"></p>
+            <p class="bigTitle bigTitle-2" id="A-time"></p>
+            <div class="abstorigtop" style="top: 4em;right: 10%;" id="A-mark"></div>
+        </div>
+        <div class="main">
+            <div class="block" id="A-main">
+                <div id="A-box" class="md"></div>
+                <!--指向的文章列表-->
+                <div id="Alistee">
+                    <h1 style="text-align: center;"><img src="/images/books.svg" class="icon"> </h1>
+                    <div id="A-list" class="list"></div>
+                </div>
+            </div>
+            <div class="block" id="A-saysBox">
+                <div id="A-says" style="min-height: 3em;"></div>
+
+            </div>
+        </div>
+    </main>
+    <!--友链页-->
+    <main id="P-friend" style="display: none;">
+        <div class="topbox">
+            <p class="bigTitle">友链</p>
+            <p class="bigTitle" style="font-size: 1.5em" id="F-amount"></p>
+            <div class="abstorigtop" style="top: 1em;right: 20%;" id="A-mark"></div>
+        </div>
+        <div class="main">
+            <div class="block" id="F-main">
+                <h2 style="text-align: center;"></h2>
+            </div>
+        </div>
+    </main>
+    <!--工具页-->
+    <main id="P-tools" style="display: none;">
+        <div class="topbox">
+            <p class="bigTitle">小工具</p>
+            <p class="bigTitle" style="font-size: 1.5em"></p>
+        </div>
+        <div class="main">
+            <div class="block tools" id="toolsList"></div>
+        </div>
+    </main>
+    <!--网盘页-->
+    <main id="P-netdev" style="display: none;">
+        <div class="topbox">
+            <p class="bigTitle">网盘</p>
+            <p class="bigTitle" style="font-size: 1.5em"></p>
+        </div>
+        <div class="main">
+            <iframe src="" frameborder="0" id="netdeviframe" class="block"></iframe>
+        </div>
+    </main>
+    <!--页脚-->
+    <div class="bottomBar">
+        <p>峰峰的博客 祝开心 o(￣▽￣)ｄ</p>
+        <p><a href="https://icp.gov.moe/?keyword=20242821" target="_blank">萌ICP备20242821号</a></p>
+    </div>
+    <!--图片放大-->
+    <div id="imgs-box">
+        <img id="imgs-img">
+    </div>
+    <script src="/js/marked.min.js"></script>
+    <script src="/js/highlight.min.js"></script>
+    <script src="/js/gitalk.min.js"></script>
+    <script src="/js/sakura.js"></script>
+    <script src="/js/bgvideo.js"></script>
+    <script src="/js/interface.js"></script>
+</body>
+
 </html>
