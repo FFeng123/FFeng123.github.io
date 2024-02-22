@@ -526,7 +526,7 @@ function openArticle(inindex) {
             var gitalk = new Gitalk({
                 clientID: '7e29ceda8c49868c79fe',
                 clientSecret: 'd2eb8a99d7432ac970a82f07cdac9e9da22b7456',
-                repo: 'blog.ffeng123.win',
+                repo: 'FFeng123.github.io',
                 owner: 'FFeng123',
                 admin: ['FFeng123'],
                 id: "Article-" + String(loading.v2.json.id),
@@ -646,4 +646,4 @@ reloadPage = () => {
     loadPage({ li: document.getElementById("list") })
 }
 
-alert = console.error = console.log = function () { }// 禁止输出
+// alert = console.error = console.log = function () { }// 禁止输出
