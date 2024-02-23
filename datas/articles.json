@@ -1,5 +1,5 @@
 {
-    "articleAmount": 65,
+    "articleAmount": 66,
     "pointerFile": "/datas/articles/{index}.json",
     "pageMaxView": 5,
     "pageLength": 5,
